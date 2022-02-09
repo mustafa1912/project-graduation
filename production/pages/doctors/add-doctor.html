@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Gentelella Alela! |</title>
+    <title>HCL | add doctor</title>
 
     <!-- Font Awesome -->
     <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/38c9c75214.js" crossorigin="anonymous"></script>
+
     <!-- NProgress -->
     <link href="../../../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
@@ -44,7 +44,7 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="../../images/img.jpg" alt="..." class="img-circle profile_img" />
+                            <img src="../../images/admin.jpg" alt="..." class="img-circle profile_img" />
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
@@ -60,22 +60,17 @@
                             <ul class="nav side-menu">
                                 <!-- Home -->
                                 <li class="rounded">
-                                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                    <a href="../../index.html"><i class="fa-solid fa-house-user me-2"></i> Home</a>
                                 </li>
                                 <!-- General Settings -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-cog"></i> General Settings <span
-                                            class="fas fa-chevron-down"></span></a>
-                                    <!-- <ul class="nav child_menu">
-                    <li class="rounded"><a href="#">Dashboard</a></li>
-                    <li class="rounded"><a href="#">Dashboard2</a></li>
-                    <li class="rounded"><a href="#">Dashboard3</a></li>
-                  </ul> -->
+                                    <a><i class="fa-solid fa-sliders me-2"></i> General Settings <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                 </li>
                                 <!--  Staff Settings  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-cog"></i> Staff Settings <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-hospital-user me-2"></i> Staff Settings <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i> Add staff</a>
                                         </li>
@@ -83,83 +78,90 @@
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
-                                <li class="rounded active">
-                                    <a><i class="fas fa-user-md"></i> Doctors <span
-                                            class="fas fa-chevron-down"></span></a>
+                                <li class="rounded">
+                                    <a><i class="fa-solid fa-user-doctor me-2"></i> Doctors <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded current-page"><a href="#"><i
-                                                    class="fas fa-plus-square"></i>Add Doctor</a></li>
-                                        <li class="rounded"><a href="doctors.html"><i class="far fa-eye"></i> Doctors
-                                            </a></li>
+                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i>Add Doctor</a>
+                                        </li>
+                                        <li class="rounded"><a href="doctors.html"><i class="far fa-eye"></i> view
+                                                Doctors
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  Nurses  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-user-nurse"></i> Nurses <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-user-nurse me-2"></i> Nurses <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../nurses/add-nurse.html"><i
-                                                    class="fas fa-plus-square"></i> Add Nurse</a></li>
+                                                    class="fas fa-plus-square"></i> Add
+                                                view Nurse</a></li>
                                         <li class="rounded"><a href="../nurses/nurses.html"><i class="far fa-eye"></i>
-                                                Nurses </a></li>
+                                                view Nurses </a></li>
                                     </ul>
                                 </li>
                                 <!--  clinics  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-clinic-medical"></i> Clinics <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-house-chimney-medical me-2"></i> Clinics <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../clinics/add-clinic.html"><i
-                                                    class="fas fa-plus-square"></i>Add clinic</a></li>
+                                                    class="fas fa-plus-square"></i>Add
+                                                clinic</a></li>
                                         <li class="rounded"><a href="../clinics/clinics.html"><i class="far fa-eye"></i>
-                                                clinics </a></li>
+                                                view clinics </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  Pharmacists  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-user-md"></i> Pharmacists <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-user me-2"></i>Pharmacists <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../Pharmacists/add-Pharmacist.html"><i
                                                     class="fas fa-plus-square"></i>Add Pharmacist</a></li>
                                         <li class="rounded"><a href="../Pharmacists/Pharmacists.html"><i
-                                                    class="far fa-eye"></i>Pharmacists </a></li>
+                                                    class="far fa-eye"></i>view Pharmacists </a></li>
                                     </ul>
                                 </li>
                                 <!--  Laboratory  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-clinic-medical"></i> Laboratory <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-laptop-medical me-2"></i> Laboratory<span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../Laboratory/add-Laboratory.html"><i
                                                     class="fas fa-plus-square"></i>Add Doctor Laboratory</a></li>
                                         <li class="rounded"><a href="../Laboratory/Laboratory.html"><i
-                                                    class="far fa-eye"></i>Edit clinics </a></li>
+                                                    class="far fa-eye"></i>
+                                                view Doctor Laboratory </a></li>
                                     </ul>
                                 </li>
                                 <!--  radiology lab  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-clinic-medical"></i> radiology lab <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-x-ray me-2"></i> radiology lab <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../radiology-lab/add-radiology-lab.html"><i
                                                     class="fas fa-plus-square"></i>Add Doctor radiology lab</a></li>
                                         <li class="rounded"><a href="../radiology-lab/radiology-lab.html"><i
-                                                    class="far fa-eye"></i>Edit clinics </a></li>
+                                                    class="far fa-eye"></i>
+                                                view Doctor Laboratory </a></li>
                                     </ul>
                                 </li>
                                 <!--  patients  -->
                                 <li class="rounded">
-                                    <a><i class="fas fa-user-injured"></i> patients <span
-                                            class="fas fa-chevron-down"></span></a>
+                                    <a><i class="fa-solid fa-bed-pulse me-2"></i> patients <span
+                                            class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="../patients/add-patient.html"><i
-                                                    class="fas fa-hospital-user"></i>patients</a></li>
+                                                    class="far fa-eye"></i>view patients</a></li>
                                         <li class="rounded"><a href="../patients/patients.html"><i
-                                                    class="far fa-eye"></i>Edit patients </a></li>
+                                                    class="fa-solid fa-user-pen"></i>Edit patients
+                                            </a></li>
                                     </ul>
                                 </li>
-                                <!--  -->
                             </ul>
                         </div>
                     </div>
@@ -195,7 +197,7 @@
                             <li class="nav-item dropdown open" style="padding-left: 15px">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
                                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="../../images/img.jpg" alt="" />John Doe
+                                    <img src="../../images/admin.jpg" alt="" />John Doe
                                 </a>
                                 <div class="dropdown-menu dropdown-usermenu pull-right"
                                     aria-labelledby="navbarDropdown">
@@ -212,14 +214,14 @@
                             <li role="presentation" class="nav-item dropdown open">
                                 <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-envelope-o"></i>
+                                    <i class="fa-solid fa-bell fs-5"></i>
                                     <span class="badge bg-green">6</span>
                                 </a>
                                 <ul class="dropdown-menu list-unstyled msg_list" role="menu"
                                     aria-labelledby="navbarDropdown1">
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="../../images/img.jpg"
+                                            <span class="image"><img src="../../images/admin.jpg"
                                                     alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
@@ -233,7 +235,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="../../images/img.jpg"
+                                            <span class="image"><img src="../../images/admin.jpg"
                                                     alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
@@ -247,7 +249,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="../../images/img.jpg"
+                                            <span class="image"><img src="../../images/admin.jpg"
                                                     alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
@@ -261,7 +263,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="../../images/img.jpg"
+                                            <span class="image"><img src="../../images/admin.jpg"
                                                     alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
@@ -292,8 +294,14 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="x_content mt-0">
-                    <form class="" action="" method="post" novalidate>
-                        <h2 class="p-2 rounded">add doctor</h2>
+                    <h2 class="p-2 rounded">add doctor</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            <li class="breadcrumb-item" aria-current="page"> Doctors</li>
+                        </ol>
+                    </nav>
+                    <form class="mt-2" action="" method="post" novalidate>
                         <div class="field item form-group mt-5">
                             <label class="col-form-label col-md-2  col-sm-2  label-align">Name<span
                                     class="required text-danger ms-1">*</span></label>
@@ -306,16 +314,24 @@
                             <label class="col-form-label col-md-2  col-sm-2  label-align">National Number <span
                                     class="required text-danger ms-1">*</span></label>
                             <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="number"placeholder="15246....."  class='number' name="number" maxlength="14"
-                                    required='required'>
+                                <input class="form-control" type="number" placeholder="15246....." class='number'
+                                    name="number" maxlength="14" required='required'>
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
                             <label class="col-form-label col-md-2  col-sm-2  label-align">Telephone<span
                                     class="required  text-danger ms-1">*</span></label>
                             <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="tel" type="number" placeholder="+20 1..." class='tel' name="phone" required='required'
-                                    maxlength="11" />
+                                <input class="form-control" type="tel" type="number" placeholder="+20 1..." class='tel'
+                                    name="phone" required='required' maxlength="11" />
+                            </div>
+                        </div>
+                        <div class="field item form-group mt-4">
+                            <label class="col-form-label col-md-2  col-sm-2  label-align">Address<span
+                                    class="required  text-danger ms-1">*</span></label>
+                            <div class="col-md-8 col-sm-8">
+                                <input class="form-control" type="text" type="number" placeholder="Quesna - Menoufia"
+                                    name="phone" required='required' maxlength="11" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -355,16 +371,16 @@
                             <label class="col-form-label col-md-2  col-sm-2  label-align">email<span
                                     class="required text-danger ms-1">*</span></label>
                             <div class="col-md-8 col-sm-8">
-                                <input class="form-control" name="email"  placeholder="mohamed@gmail.com" class='email' required="required"
-                                    type="email" />
+                                <input class="form-control" name="email" placeholder="mohamed@gmail.com" class='email'
+                                    required="required" type="email" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
                             <label class="col-form-label col-md-2  col-sm-2  label-align">Password<span
                                     class="required text-danger ms-1">*</span></label>
                             <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="password" id="password1" placeholder="*******" name="password"
-                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"
+                                <input class="form-control" type="password" id="password1" placeholder="*******"
+                                    name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"
                                     title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character"
                                     required />
                                 <span style="position: absolute;right:15px;top:7px;" onclick="hideshow()">
@@ -374,21 +390,29 @@
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Gender <span
-                                class="required text-danger ms-1">*</span></label>
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" class="flat mt-2" checked name="iCheck"> male
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" class="flat mt-3" name="iCheck"> fmale
-                                        </label>
-                                    </div>
-                                </div>
+                            <label class="col-form-label col-md-2  col-sm-2  label-align">Uploud image<span
+                                    class="required text-danger ms-1">*</span></label>
+                            <div class="col-md-8 col-sm-8">
+                                <input type="file" id="img" name="img" accept="image/*" class="form-control">
+                            </div>
                         </div>
+                        <div class="field item form-group mt-4">
+                            <label class="col-form-label col-md-2  col-sm-2  label-align">Gender <span
+                                    class="required text-danger ms-1">*</span></label>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" class="flat mt-2" checked name="iCheck"> male
+                                    </label>
+                                </div>
+                                <div class="radio mt-3">
+                                    <label>
+                                        <input type="radio" class="flat mt-3" name="iCheck"> fmale
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-group mb-4 pt-2">
                             <div class="w-75 offset-md-1 mt-5 d-flex justify-content-center">
                                 <button type='submit' class="btn btn-primary">Submit</button>
