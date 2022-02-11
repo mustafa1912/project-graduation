@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>HCL | edite doctor</title>
+    <title>HCL | view nurse</title>
 
     <!-- Font Awesome -->
     <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
@@ -37,7 +37,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title roundeds" style="border: 0">
-                        <a href="../../index.html" class="site_title"><i class="fas fa-paw"></i> <span> HCL dashboard
+                        <a href="../../index.html" class="site_title"><i class="fas fa-paw"></i> <span>HCL Admin page
                                 </span></a>
                     </div>
                     <div class="clearfix"></div>
@@ -78,7 +78,7 @@
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
-                                <li class="rounded active">
+                                <li class="rounded">
                                     <a><i class="fa-solid fa-user-doctor me-2"></i> Doctors <span
                                             class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
@@ -92,7 +92,7 @@
                                     </ul>
                                 </li>
                                 <!--  Nurses  -->
-                                <li class="rounded">
+                                <li class="rounded active">
                                     <a><i class="fa-solid fa-user-nurse me-2"></i> Nurses <span
                                             class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
@@ -290,126 +290,99 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="x_content mt-0">
-                    <h2 class="p-2 rounded"> Edited doctor</h2>
+                    <h2 class="p-2 rounded">profile nurse</h2>
+                    <!-- breadcrumb -->
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">Home</li>
                             <li class="breadcrumb-item active" aria-current="page">Doctors</li>
-                            <li class="breadcrumb-item" aria-current="page"> Edite Doctors</li>
+                            <li class="breadcrumb-item" aria-current="page"> profile nurse</li>
                         </ol>
                     </nav>
-                    <form class="" action="" method="post" novalidate>
-                        <div class="field item form-group mt-5">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Name<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Mohamed sharaf" required="required" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">National Number <span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="number" placeholder="15246....." class='number' name="number" maxlength="14" required='required'>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Telephone<span
-                                    class="required  text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="tel" type="number" placeholder="+20 1..." class='tel' name="phone" required='required' maxlength="11" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Address<span
-                                    class="required  text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="text" type="number" placeholder="Quesna - Menoufia" name="phone" required='required' maxlength="11" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Birthday Date<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" class='date' type="date" name="date" required='required'>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Date<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" class='date' type="date" name="date" required='required'>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Time<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" class='time' type="time" name="time" required='required'>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="control-label col-md-2  col-sm-2 ">specialty</label>
-                            <div class="col-md-v col-sm-8 ">
-                                <select class="form-control">
-                                    <option>Choose option</option>
-                                    <option>Option one</option>
-                                    <option>Option two</option>
-                                    <option>Option three</option>
-                                    <option>Option four</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">email<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" name="email" placeholder="mohamed@gmail.com" class='email' required="required" type="email" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Password<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="password" id="password1" placeholder="*******" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character"
-                                    required />
-                                <span style="position: absolute;right:15px;top:7px;" onclick="hideshow()">
-                                    <i id="slash" class="fa fa-eye-slash"></i>
-                                    <i id="eye" class="fa fa-eye"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Uploud image<span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <input type="file" id="img" name="img" accept="image/*" class="form-control">
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2  col-sm-2  label-align">Gender <span
-                                    class="required text-danger ms-1">*</span></label>
-                            <div class="col-md-8 col-sm-8">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" class="flat mt-2" checked name="iCheck"> male
-                                    </label>
+                    <!-- /breadcrumb -->
+                    <div class="info-doctor row mt-4">
+                        <div class="col-3 mt-2">
+                            <img src="../../images/08cf172f26dc2ca14e0241e4accf06dd.jpg" class="w-100 rounded">
+                            <div class="mt-3 ms-1">
+                                <div class="d-flex">
+                                    <h4>Dr/
+                                        <h4 class="ms-1"> mohamed nasfe</h4>
+                                    </h4>
                                 </div>
-                                <div class="radio mt-3">
-                                    <label>
-                                        <input type="radio" class="flat mt-3" name="iCheck"> fmale
-                                    </label>
+                                <p class="mt-2">dermatologist</p>
+                            </div>
+                        </div>
+                        <div class="col-9 mt-2">
+                            <div class="row w-75 m-auto mt-3">
+                                <div class="col-4">
+                                    <p>Full Name</p>
+                                </div>
+                                <div class="col">
+                                    <p> mohamed nasfe</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="form-group mb-4 pt-2">
-                            <div class="w-75 offset-md-1 mt-5 d-flex justify-content-center">
-                                <button type='submit' class="btn btn-primary">Submit</button>
-                                <button type='reset' class="btn btn-success">Reset</button>
+                            <div class="row w-75 m-auto mt-3">
+                                <div class="col-4">
+                                    <p>Email</p>
+                                </div>
+                                <div class="col">
+                                    <p> mohamed nasfe10@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row w-75 m-auto mt-3">
+                                <div class="col-4">
+                                    <p>Phone</p>
+                                </div>
+                                <div class="col">
+                                    <p>01065849530</p>
+                                </div>
+                            </div>
+                            <div class="row w-75 m-auto mt-3">
+                                <div class="col-4">
+                                    <p>Address</p>
+                                </div>
+                                <div class="col">
+                                    <p>Quesna - Menoufia</p>
+                                </div>
+                            </div>
+                            <div class="social w-75 m-auto mt-2">
+                                <a href="#" class="btn p-0 border-0 ms-2"><i
+                                        class="fa-brands fa-facebook-square"></i></a>
+                                <a href="#" class="btn p-0 border-0 ms-2"><i
+                                        class="fa-brands fa-twitter-square"></i></a>
+                                <a href="#" class="btn p-0 border-0 ms-2"><i
+                                        class="fa-brands fa-whatsapp-square"></i></a>
+                            </div>
+                            <div class="w-75 m-auto mt-2">
+                                <a href="edite-doctor.html" class="btn"><i class="fa-solid fa-user-pen"></i>
+                                    <span class="ms-2">Edite</span> </a>
                             </div>
                         </div>
-                    </form>
+                        <hr class="w-100 bg-dark mt-3">
+                        <div class="doctor-numbers row mt-3">
+                            <div class="col m-2 rounded text-center info">
+                                <div class="d-flex mt-3">
+                                    <h3 class="numbers">100</h3>
+                                </div>
+                                <p class="mt-md-4">Number of checks</p>
+                                <p class="mt-2">per month</p>
+                            </div>
+                            <div class="col m-2 rounded text-center info">
+                                <div class="d-flex mt-3">
+                                    <h3 class="numbers">150</h3>
+                                </div>
+                                <p class="mt-4">number of process </p>
+                                <p class="mt-2">per month</p>
+                            </div>
+                            <div class="col m-2 rounded text-center info">
+                                <div class="d-flex mt-3">
+                                    <h3 class="numbers">50</h3>
+                                </div>
+                                <p class="mt-4">number of days of attendance </p>
+                                <p class="mt-2">per month</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- /page content -->
