@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>HCL | edite doctor</title>
+    <title>HCL | edite patient</title>
 
     <!-- Font Awesome -->
     <link href="../../../vendors/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet" />
@@ -89,19 +89,19 @@
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
-                                <li class="rounded active">
+                                <li class="rounded ">
                                     <a>
                                         <i class="fa-solid fa-user-doctor me-2"></i> Doctors
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded">
-                                            <a href="add-doctor.html">
+                                        <li class="rounded ">
+                                            <a href="../doctors/add-doctor.html">
                                                 <i class="fas fa-plus-square"></i> Add Doctor
                                             </a>
                                         </li>
                                         <li class="rounded">
-                                            <a href="doctors.html">
+                                            <a href="../doctors/doctors.html">
                                                 <i class="far fa-eye"></i> view Doctors
                                             </a>
                                         </li>
@@ -202,14 +202,14 @@
                                     </ul>
                                 </li>
                                 <!--  patients  -->
-                                <li class="rounded">
+                                <li class="rounded active">
                                     <a>
                                         <i class="fa-solid fa-bed-pulse me-2"></i> patients
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
                                         <li class="rounded">
-                                            <a href="../patients/patients.html">
+                                            <a href="patients.html">
                                                 <i class="far fa-eye"></i> view patients
                                             </a>
                                         </li>
@@ -348,13 +348,13 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="x_content mt-0">
-                    <h2 class="p-2 rounded">add doctor</h2>
+                    <h2 class="p-2 rounded">edite patient</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">Home</li>
-                            <li class="breadcrumb-item" aria-current="page">Doctors</li>
+                            <li class="breadcrumb-item" aria-current="page">patients</li>
                             <li class="breadcrumb-item" aria-current="page">
-                                edite Doctor
+                                edite patient
                             </li>
                         </ol>
                     </nav>
@@ -369,12 +369,12 @@
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Doctor ID">
-                              Doctor ID
+                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="patient ID">
+                                patient ID
                               <span class="required text-danger ms-1">*</span>
                           </label>
                             <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="number" placeholder="Doctor ID" id="Doctor ID" class="number" name="number" required />
+                                <input class="form-control" type="number" placeholder="patient ID" id="patient ID" class="number" name="number" required />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">

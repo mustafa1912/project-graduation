@@ -72,31 +72,31 @@
                                     </a>
                                 </li>
                                 <!--  Staff Settings  -->
-                                <li class="rounded ">
+                                <li class="rounded active">
                                     <a>
                                         <i class="fa-solid fa-hospital-user me-2"></i> Emplyees Settings
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded">
-                                            <a href="../emplyees/add-emplyees.html">
+                                        <li class="rounded ">
+                                            <a href="add-emplyees.html">
                                                 <i class="fas fa-plus-square"></i> Add emplyees
                                             </a>
                                         </li>
-                                        <li class="rounded">
-                                            <a href="../emplyees/emplyees.html"> <i class="far fa-eye"></i> emplyees </a>
+                                        <li class="rounded current-page">
+                                            <a href="#"> <i class="far fa-eye"></i> emplyees </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
-                                <li class="rounded active">
+                                <li class="rounded ">
                                     <a>
                                         <i class="fa-solid fa-user-doctor me-2"></i> Doctors
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded">
-                                            <a href="add-doctor.html">
+                                        <li class="rounded ">
+                                            <a href="#">
                                                 <i class="fas fa-plus-square"></i> Add Doctor
                                             </a>
                                         </li>
@@ -209,8 +209,13 @@
                                     </a>
                                     <ul class="nav child_menu">
                                         <li class="rounded">
-                                            <a href="../patients/patients.html">
+                                            <a href="../patients/add-patient.html">
                                                 <i class="far fa-eye"></i> view patients
+                                            </a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../patients/patients.html">
+                                                <i class="fa-solid fa-user-pen"></i> Edit patients
                                             </a>
                                         </li>
                                     </ul>
@@ -348,13 +353,13 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="x_content mt-0">
-                    <h2 class="p-2 rounded">add doctor</h2>
+                    <h2 class="p-2 rounded">add emplyees</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">Home</li>
-                            <li class="breadcrumb-item" aria-current="page">Doctors</li>
+                            <li class="breadcrumb-item" aria-current="page">emplyees</li>
                             <li class="breadcrumb-item" aria-current="page">
-                                edite Doctor
+                                edite emplyees
                             </li>
                         </ol>
                     </nav>
@@ -369,12 +374,12 @@
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Doctor ID">
-                              Doctor ID
+                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="emplyees ID">
+                                emplyees ID
                               <span class="required text-danger ms-1">*</span>
                           </label>
                             <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="number" placeholder="Doctor ID" id="Doctor ID" class="number" name="number" required />
+                                <input class="form-control" type="number" placeholder="emplyees ID" id="emplyees ID" class="number" name="number" required />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -411,21 +416,6 @@
                           </label>
                             <div class="col-12 col-sm-12 col-md-8 floatingInput">
                                 <input class="form-control" class="date" type="date" id="Birthday" name="date" required />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="control-label col-md-2 col-sm-2" for="Speciality">
-                              Speciality
-                              <span class="required text-danger ms-1">*</span>
-                          </label>
-                            <div class="col-md-v col-12 col-sm-12 col-md-8">
-                                <select class="form-control" placeholder="Choise Speciality" id="Speciality">
-                                  <option>Pediatrician</option>
-                                  <option>dentist</option>
-                                  <option>Heart Surgery</option>
-                                  <option>Psychiatry</option>
-                                  <option>Kidney disease</option>
-                              </select>
                             </div>
                         </div>
                         <div class="field item form-group mt-4">

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>HCL | Nurses</title>
+    <title>HCL | doctors</title>
 
     <!-- Font Awesome -->
     <link href="../../../vendors/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet" />
@@ -66,45 +66,45 @@
                                             class="fa-solid fa-caret-down"></span></a>
                                 </li>
                                 <!--  Staff Settings  -->
-                                <li class="rounded ">
+                                <li class="rounded active">
                                     <a>
                                         <i class="fa-solid fa-hospital-user me-2"></i> Emplyees Settings
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
                                         <li class="rounded">
-                                            <a href="../emplyees/add-emplyees.html">
+                                            <a href="add-emplyees.html">
                                                 <i class="fas fa-plus-square"></i> Add emplyees
                                             </a>
                                         </li>
-                                        <li class="rounded">
-                                            <a href="../emplyees/emplyees.html"> <i class="far fa-eye"></i> emplyees </a>
+                                        <li class="rounded current-page">
+                                            <a href="#"> <i class="far fa-eye"></i> emplyees </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
-                                <li class="rounded">
+                                <li class="rounded ">
                                     <a><i class="fa-solid fa-user-doctor me-2"></i> Doctors <span
                                             class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../doctors/add-doctor.html"><i
+                                        <li class="rounded"><a href="add-doctor.html"><i
                                                     class="fas fa-plus-square"></i>Add Doctor</a>
                                         </li>
-                                        <li class="rounded"><a href="../doctors/doctors.html"><i class="far fa-eye"></i> view
+                                        <li class="rounded "><a href="#"><i class="far fa-eye"></i> view
                                                 Doctors
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <!--  Nurses  -->
-                                <li class="rounded active">
+                                <li class="rounded">
                                     <a><i class="fa-solid fa-user-nurse me-2"></i> Nurses <span
                                             class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="add-nurse.html"><i
+                                        <li class="rounded"><a href="../nurses/add-nurse.html"><i
                                                     class="fas fa-plus-square"></i> Add
                                                 view Nurse</a></li>
-                                        <li class="rounded current-page"><a href="#"><i class="far fa-eye"></i>
+                                        <li class="rounded"><a href="../nurses/nurses.html"><i class="far fa-eye"></i>
                                                 view Nurses </a></li>
                                     </ul>
                                 </li>
@@ -161,8 +161,11 @@
                                     <a><i class="fa-solid fa-bed-pulse me-2"></i> patients <span
                                             class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../patients/patients.html"><i
+                                        <li class="rounded"><a href="../patients/add-patient.html"><i
                                                     class="far fa-eye"></i>view patients</a></li>
+                                        <li class="rounded"><a href="../patients/patients.html"><i
+                                                    class="fa-solid fa-user-pen"></i>Edit patients
+                                            </a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -294,11 +297,11 @@
             <div class="right_col" role="main">
                 <div class="x_content mt-0">
                     <div class="page-title">
-                        <h2 class="p-2 rounded">Nurses</h2>
+                        <h2 class="p-2 rounded">Doctors</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item active" aria-current="page">Home</li>
-                                <li class="breadcrumb-item" aria-current="page"> Nurses</li>
+                                <li class="breadcrumb-item" aria-current="page"> Doctors</li>
                             </ol>
                         </nav>
                         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search m-0">
@@ -342,10 +345,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -362,10 +365,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -382,10 +385,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -402,10 +405,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -422,10 +425,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -442,10 +445,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -462,10 +465,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -482,10 +485,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -502,10 +505,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -522,10 +525,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -542,10 +545,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -562,10 +565,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -582,10 +585,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -602,10 +605,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -622,10 +625,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -642,10 +645,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -662,10 +665,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -682,10 +685,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -702,10 +705,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -722,10 +725,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -742,10 +745,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -762,10 +765,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -782,10 +785,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -802,10 +805,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -822,10 +825,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -842,10 +845,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -862,10 +865,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -882,10 +885,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -902,10 +905,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -922,10 +925,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -942,10 +945,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -962,10 +965,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -982,10 +985,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1002,10 +1005,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1022,10 +1025,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1042,10 +1045,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1062,10 +1065,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1082,10 +1085,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1102,10 +1105,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1122,10 +1125,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1142,10 +1145,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1162,10 +1165,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1182,10 +1185,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1202,10 +1205,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1222,10 +1225,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1242,10 +1245,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1262,10 +1265,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1282,10 +1285,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1302,10 +1305,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1322,10 +1325,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1342,10 +1345,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1362,10 +1365,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1382,10 +1385,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1402,10 +1405,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1422,10 +1425,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1442,10 +1445,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1462,10 +1465,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
@@ -1482,10 +1485,10 @@
                                         <div class="col-1  ps-2 rounded text-center"> 33</div>
                                         <div class="col-1  ps-2 rounded"> 1500</div>
                                         <div class="col-2  rounded d-flex justify-content-evenly">
-                                            <a href="view-nurse.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                            <a href="view-doctor.html" class="btn add" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="edite-nurse.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
+                                            <a href="edite-doctor.html" class="btn edite" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Edite">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </a>
                                             <a href="" class="btn delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">

@@ -13,8 +13,7 @@
 
     <!-- Font Awesome -->
     <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- NProgress -->
     <link href="../../../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
@@ -28,7 +27,7 @@
     <!-- Bootstrap -->
     <link href="../../../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
-    <link href="../../../build/css/custom.css" rel="stylesheet" />
+    <link href="../../../build/scss/main.css" rel="stylesheet" />
 </head>
 
 <body class="nav-md">
@@ -73,13 +72,20 @@
                   </ul> -->
                                 </li>
                                 <!--  Staff Settings  -->
-                                <li class="rounded">
-                                    <a><i class="fas fa-cog"></i> Staff Settings <span
-                                            class="fas fa-chevron-down"></span></a>
+                                <li class="rounded ">
+                                    <a>
+                                        <i class="fa-solid fa-hospital-user me-2"></i> Emplyees Settings
+                                        <span class="fa-solid fa-caret-down"></span>
+                                    </a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i> Add staff</a>
+                                        <li class="rounded">
+                                            <a href="../emplyees/add-emplyees.html">
+                                                <i class="fas fa-plus-square"></i> Add emplyees
+                                            </a>
                                         </li>
-                                        <li class="rounded"><a href="#"><i class="far fa-eye"></i> Edit staff </a></li>
+                                        <li class="rounded">
+                                            <a href="../emplyees/emplyees.html"> <i class="far fa-eye"></i> emplyees </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
@@ -89,8 +95,8 @@
                                     <ul class="nav child_menu">
                                         <li class="rounded "><a href="../add-doctor.html"><i
                                                     class="fas fa-plus-square"></i>Add Doctor</a></li>
-                                        <li class="rounded "><a href="../doctors.html"><i
-                                                    class="far fa-eye"></i> Doctors </a></li>
+                                        <li class="rounded "><a href="../doctors.html"><i class="far fa-eye"></i>
+                                                Doctors </a></li>
                                     </ul>
                                 </li>
                                 <!--  Nurses  -->
@@ -98,10 +104,10 @@
                                     <a><i class="fas fa-user-nurse"></i> Nurses <span
                                             class="fas fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="#"><i
-                                                    class="fas fa-plus-square"></i> Add Nurse</a></li>
-                                        <li class="rounded"><a href="nurses.html"><i
-                                                    class="far fa-eye"></i> Nurses </a></li>
+                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i> Add Nurse</a>
+                                        </li>
+                                        <li class="rounded"><a href="nurses.html"><i class="far fa-eye"></i> Nurses </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  clinics  -->
@@ -109,10 +115,10 @@
                                     <a><i class="fas fa-clinic-medical"></i> Clinics <span
                                             class="fas fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="#"><i
-                                                    class="fas fa-plus-square"></i>Add clinic</a></li>
-                                        <li class="rounded"><a href="clinics.html"><i
-                                                    class="far fa-eye"></i> clinics </a></li>
+                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i>Add clinic</a>
+                                        </li>
+                                        <li class="rounded"><a href="clinics.html"><i class="far fa-eye"></i> clinics
+                                            </a></li>
                                     </ul>
                                 </li>
                                 <!--  Pharmacists  -->
@@ -122,8 +128,7 @@
                                     <ul class="nav child_menu">
                                         <li class="rounded "><a href="Pharmacist.html"><i
                                                     class="fas fa-plus-square"></i>Add Pharmacist</a></li>
-                                        <li class="rounded"><a href="#"><i
-                                                    class="far fa-eye"></i>Pharmacists </a></li>
+                                        <li class="rounded"><a href="#"><i class="far fa-eye"></i>Pharmacists </a></li>
                                     </ul>
                                 </li>
                                 <!--  Laboratory  -->
@@ -131,10 +136,10 @@
                                     <a><i class="fas fa-clinic-medical"></i> Laboratory <span
                                             class="fas fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="#"><i
-                                                    class="fas fa-plus-square"></i>Add Doctor Laboratory</a></li>
-                                        <li class="rounded"><a href="Laboratory.html"><i
-                                                    class="far fa-eye"></i>Edit clinics </a></li>
+                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i>Add Doctor
+                                                Laboratory</a></li>
+                                        <li class="rounded"><a href="Laboratory.html"><i class="far fa-eye"></i>Edit
+                                                clinics </a></li>
                                     </ul>
                                 </li>
                                 <!--  radiology lab  -->
@@ -144,8 +149,8 @@
                                     <ul class="nav child_menu">
                                         <li class="rounded"><a href="add-radiology-lab.html"><i
                                                     class="fas fa-plus-square"></i>Add Doctor radiology lab</a></li>
-                                        <li class="rounded  current-page"><a href="#"><i
-                                                    class="far fa-eye"></i>Edit clinics </a></li>
+                                        <li class="rounded  current-page"><a href="#"><i class="far fa-eye"></i>Edit
+                                                clinics </a></li>
                                     </ul>
                                 </li>
                                 <!--  patients  -->
@@ -153,10 +158,8 @@
                                     <a><i class="fas fa-user-injured"></i> patients <span
                                             class="fas fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="patient.html"><i
+                                        <li class="rounded"><a href="../patients/patients.html"><i
                                                     class="fas fa-hospital-user"></i>patients</a></li>
-                                        <li class="rounded"><a href="#"><i
-                                                    class="far fa-eye"></i>Edit patients </a></li>
                                     </ul>
                                 </li>
                                 <!--  -->
@@ -193,12 +196,10 @@
                     <nav class="nav navbar-nav">
                         <ul class="navbar-right">
                             <li class="nav-item dropdown open" style="padding-left: 15px">
-                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
-                                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                                     <img src="images/img.jpg" alt="" />John Doe
                                 </a>
-                                <div class="dropdown-menu dropdown-usermenu pull-right"
-                                    aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="javascript:;"> Profile</a>
                                     <a class="dropdown-item" href="javascript:;">
                                         <span class="badge bg-red pull-right">50%</span>
@@ -210,19 +211,17 @@
                                 </div>
                             </li>
                             <li role="presentation" class="nav-item dropdown open">
-                                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
-                                    data-toggle="dropdown" aria-expanded="false">
+                                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-envelope-o"></i>
                                     <span class="badge bg-green">6</span>
                                 </a>
-                                <ul class="dropdown-menu list-unstyled msg_list" role="menu"
-                                    aria-labelledby="navbarDropdown1">
+                                <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                                     <li class="nav-item">
                                         <a class="dropdown-item">
                                             <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
+                                            <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie
@@ -235,7 +234,7 @@
                                             <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
+                                            <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie
@@ -248,7 +247,7 @@
                                             <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
+                                            <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie
@@ -261,7 +260,7 @@
                                             <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
+                                            <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie
@@ -287,7 +286,7 @@
 
             <!-- page content -->
             <div class="right_col" role="main">
-               
+
             </div>
             <!-- /page content -->
 
@@ -302,7 +301,12 @@
             <!-- /footer content -->
         </div>
     </div>
-
+    <!-- move to up -->
+    <div class="up-btn shadow-lg position-fixed rounded-lg" id="up-btn">
+        <button type="button" class="btn  btn-lg  shadow-lg text-light">
+            <i class="fa-solid fa-turn-up"></i>
+        </button>
+    </div>
     <!-- jQuery -->
     <script src="../../../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -345,7 +349,7 @@
     <script src="../../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="../../../build/js/custom.min.js"></script>
+    <script src="../../../build/js/custom.js"></script>
 </body>
 
 </html>

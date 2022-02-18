@@ -12,9 +12,7 @@
     <title>HCL | add doctor</title>
 
     <!-- Font Awesome -->
-    <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <script src="https://kit.fontawesome.com/38c9c75214.js" crossorigin="anonymous"></script>
-
+    <link href="../../../vendors/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet" />
     <!-- NProgress -->
     <link href="../../../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
@@ -28,7 +26,7 @@
     <!-- Bootstrap -->
     <link href="../../../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
-    <link href="../../../build/css/custom.css" rel="stylesheet" />
+    <link href="../../../build/scss/main.css" rel="stylesheet" />
 </head>
 
 <body class="nav-md">
@@ -36,7 +34,7 @@
         <div class="main_container">
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
-                    <div class="navbar nav_title roundeds" style="border: 0;">
+                    <div class="navbar nav_title roundeds" style="border: 0">
                         <a href="../../index.html" class="site_title">
                             <i class="fas fa-paw"></i>
                             <span>HCL dashboard</span>
@@ -74,21 +72,19 @@
                                     </a>
                                 </li>
                                 <!--  Staff Settings  -->
-                                <li class="rounded">
+                                <li class="rounded ">
                                     <a>
-                                        <i class="fa-solid fa-hospital-user me-2"></i> Staff Settings
+                                        <i class="fa-solid fa-hospital-user me-2"></i> Emplyees Settings
                                         <span class="fa-solid fa-caret-down"></span>
                                     </a>
                                     <ul class="nav child_menu">
                                         <li class="rounded">
-                                            <a href="#">
-                                                <i class="fas fa-plus-square"></i> Add staff
+                                            <a href="../emplyees/add-emplyees.html">
+                                                <i class="fas fa-plus-square"></i> Add emplyees
                                             </a>
                                         </li>
                                         <li class="rounded">
-                                            <a href="#">
-                                                <i class="far fa-eye"></i> Edit staff
-                                            </a>
+                                            <a href="../emplyees/emplyees.html"> <i class="far fa-eye"></i> emplyees </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -120,7 +116,7 @@
                                     <ul class="nav child_menu">
                                         <li class="rounded">
                                             <a href="../nurses/add-nurse.html">
-                                                <i class="fas fa-plus-square"></i> Add view Nurse</a>
+                                                <i class="fas fa-plus-square"></i> Add Nurse</a>
                                         </li>
                                         <li class="rounded">
                                             <a href="../nurses/nurses.html">
@@ -213,13 +209,8 @@
                                     </a>
                                     <ul class="nav child_menu">
                                         <li class="rounded">
-                                            <a href="../patients/add-patient.html">
-                                                <i class="far fa-eye"></i> view patients
-                                            </a>
-                                        </li>
-                                        <li class="rounded">
                                             <a href="../patients/patients.html">
-                                                <i class="fa-solid fa-user-pen"></i> Edit patients
+                                                <i class="far fa-eye"></i> view patients
                                             </a>
                                         </li>
                                     </ul>
@@ -256,7 +247,7 @@
                     </div>
                     <nav class="nav navbar-nav">
                         <ul class="navbar-right">
-                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                            <li class="nav-item dropdown open" style="padding-left: 15px">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                                     <img src="../../images/admin.jpg" alt="" /> John Doe
                                 </a>
@@ -361,17 +352,26 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">Home</li>
-                            <li class="breadcrumb-item" aria-current="page">Add Doctors</li>
+                            <li class="breadcrumb-item" aria-current="page">Add Doctor</li>
                         </ol>
                     </nav>
-                    <form class="mt-2" action="" method="post" novalidate>
+                    <form class="mt-2">
                         <div class="field item form-group mt-5">
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="Name">
                                 Name
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" id="Name" placeholder="Mohamed sharaf" required="required" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" id="Name" placeholder="Mohamed sharaf" required />
+                            </div>
+                        </div>
+                        <div class="field item form-group mt-4">
+                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Doctor ID">
+                                Doctor ID
+                                <span class="required text-danger ms-1">*</span>
+                            </label>
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" type="number" placeholder="Doctor ID" id="Doctor ID" class="number" name="number" required />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -379,8 +379,8 @@
                                 National Number
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="number" placeholder="15246....." id="National-Number" class="number" name="number" maxlength="14" required="required" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" type="number" placeholder="National Number" id="National-Number" class="number" name="number" maxlength="14" required />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -388,8 +388,8 @@
                                 phone
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="tel" type="number" id="phone" placeholder="+20 1..." class="tel" name="phone" required="required" maxlength="11" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" type="tel" type="number" id="phone" placeholder="+20 1..." class="tel" name="phone" required maxlength="11" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -397,8 +397,8 @@
                                 Address
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" type="text" type="number" id="Address" placeholder="Quesna - Menoufia" name="phone" required="required" maxlength="11" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" type="text" type="number" id="Address" placeholder="Quesna - Menoufia" name="phone" required maxlength="11" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -406,8 +406,8 @@
                                 Birthday Date
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" class="date" type="date" id="Birthday" name="date" required="required" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" class="date" type="date" id="Birthday" name="date" required />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -415,7 +415,7 @@
                                 Speciality
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-v col-sm-8">
+                            <div class="col-md-v col-12 col-sm-12 col-md-8">
                                 <select class="form-control" placeholder="Choise Speciality" id="Speciality">
                                     <option>Pediatrician</option>
                                     <option>dentist</option>
@@ -429,7 +429,7 @@
                             <label class="control-label col-md-2 col-sm-2">
                                 Work shift
                             </label>
-                            <div class="col-md-v col-sm-8">
+                            <div class="col-md-v col-12 col-sm-12 col-md-8">
                                 <select class="form-control">
                                     <option>8 : 4</option>
                                     <option>4 : 12</option>
@@ -441,7 +441,7 @@
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="image">
                                 Uploud image
                             </label>
-                            <div class="col-md-8 col-sm-8">
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
                                 <input type="file" id="img" name="img" id="image" accept="image/*" class="form-control" />
                             </div>
                         </div>
@@ -449,27 +449,31 @@
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="whatsapp">
                                 whatsapp
                             </label>
-                            <div class="col-md-8 col-sm-8 row ">
+                            <div class="col-md-8 col-sm-8 row">
                                 <span class="input-group-text col-1"><i class="fa-brands fa-whatsapp"></i></span>
-                                <input type="text" class="form-control col" placeholder="whatsapp" id="whatsapp" name="whatsapp">
+                                <input type="text" class="form-control col" placeholder="whatsapp" id="whatsapp" name="whatsapp" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="Facebook">
                                 Facebook
                             </label>
-                            <div class="col-md-8 col-sm-8 row ">
-                                <span class="input-group-text col-1"> <i class="fa-brands fa-facebook-f"></i> </span>
-                                <input type="text" class="form-control col" placeholder="Facebook" id="Facebook" name="Facebook">
+                            <div class="col-md-8 col-sm-8 row">
+                                <span class="input-group-text col-1">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                <input type="text" class="form-control col" placeholder="Facebook" id="Facebook" name="Facebook" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="twitter">
                                 twitter
                             </label>
-                            <div class="col-md-8 col-sm-8 row ">
-                                <span class="input-group-text col-1"> <i class="fa-brands fa-twitter"></i> </span>
-                                <input type="text" class="form-control col" placeholder="twitter" id="Facebook" name="twitter">
+                            <div class="col-md-8 col-sm-8 row">
+                                <span class="input-group-text col-1">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </span>
+                                <input type="text" class="form-control col" placeholder="twitter" id="twitter" name="twitter" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -477,8 +481,8 @@
                                 email
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
-                                <input class="form-control" name="email" placeholder="mohamed@gmail.com" id="email" class="email" required="required" type="email" />
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                <input class="form-control" name="email" placeholder="mohamed@gmail.com" id="email" class="email" required type="email" />
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
@@ -486,21 +490,21 @@
                                 Password
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
+                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
                                 <input class="form-control" type="password" id="Password" placeholder="*******" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character"
                                     required />
-                                <span style="position: absolute; right: 15px; top: 7px;" onclick="hideshow()">
-                                    <i id="slash" class="fa fa-eye-slash"></i>
-                                    <i id="eye" class="fa fa-eye"></i>
+                                <span style="position: absolute; right: 15px; top: 7px" id="hideshow">
+                                    <i id="slash" class="fa fa-eye-slash me-2 d-none"></i>
+                                    <i id="eye" class="fa fa-eye me-2"></i>
                                 </span>
                             </div>
                         </div>
                         <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align">
+                            <label class="col-form-label col-md-2 col-sm-2 label-align d-inline">
                                 Gender
                                 <span class="required text-danger ms-1">*</span>
                             </label>
-                            <div class="col-md-8 col-sm-8">
+                            <div class="col-8 col-sm-8 col-md-8 floatingInput">
                                 <div class="radio">
                                     <label>
                                         <input type="radio" class="flat mt-2" checked name="iCheck" />
@@ -515,7 +519,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="form-group mb-4 pt-2">
                             <div class="w-75 offset-md-1 mt-5 d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -526,7 +529,6 @@
                 </div>
             </div>
             <!-- /page content -->
-
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
@@ -538,7 +540,16 @@
             <!-- /footer content -->
         </div>
     </div>
+    <!-- move to up -->
+    <div class="up-btn shadow-lg position-fixed rounded-lg" id="moveTop">
+        <button type="button" class="btn btn-lg shadow-lg text-light m-0">
+            <i class="fa-solid fa-turn-up"></i>
+        </button>
+    </div>
 
+    <!-- js -->
+    <!-- Bootstrap -->
+    <script src="../../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- jQuery -->
     <script src="../../../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -579,9 +590,9 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../../../vendors/moment/min/moment.min.js"></script>
     <script src="../../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-
     <!-- Custom Theme Scripts -->
-    <script src="../../../build/js/custom.min.js"></script>
+    <script src="../../../build/js/showpass.js"></script>
+    <script src="../../../build/js/custom.js"></script>
 </body>
 
 </html>

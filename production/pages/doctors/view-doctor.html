@@ -12,9 +12,7 @@
     <title>HCL | view doctor</title>
 
     <!-- Font Awesome -->
-    <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <script src="https://kit.fontawesome.com/38c9c75214.js" crossorigin="anonymous"></script>
-
+    <link href="../../../vendors/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet" />
     <!-- NProgress -->
     <link href="../../../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
@@ -28,7 +26,8 @@
     <!-- Bootstrap -->
     <link href="../../../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
-    <link href="../../../build/css/custom.css" rel="stylesheet" />
+    <link href="../../../build/scss/main.css" rel="stylesheet" />
+
 </head>
 
 <body class="nav-md">
@@ -38,7 +37,7 @@
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title roundeds" style="border: 0">
                         <a href="../../index.html" class="site_title"><i class="fas fa-paw"></i> <span>HCL dashboard
-                                </span></a>
+                            </span></a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- menu profile quick info -->
@@ -64,103 +63,129 @@
                                 </li>
                                 <!-- General Settings -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-sliders me-2"></i> General Settings <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-sliders me-2"></i> General Settings
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                 </li>
                                 <!--  Staff Settings  -->
-                                <li class="rounded">
-                                    <a><i class="fa-solid fa-hospital-user me-2"></i> Staff Settings <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                <li class="rounded ">
+                                    <a>
+                                        <i class="fa-solid fa-hospital-user me-2"></i> Emplyees Settings
+                                        <span class="fa-solid fa-caret-down"></span>
+                                    </a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="#"><i class="fas fa-plus-square"></i> Add staff</a>
+                                        <li class="rounded">
+                                            <a href="../emplyees/add-emplyees.html">
+                                                <i class="fas fa-plus-square"></i> Add emplyees
+                                            </a>
                                         </li>
-                                        <li class="rounded"><a href="#"><i class="far fa-eye"></i> Edit staff </a></li>
+                                        <li class="rounded">
+                                            <a href="../emplyees/emplyees.html"> <i class="far fa-eye"></i> emplyees </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  Doctors  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-user-doctor me-2"></i> Doctors <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-user-doctor me-2"></i> Doctors
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="add-doctor.html"><i
-                                                    class="fas fa-plus-square"></i>Add Doctor</a>
+                                        <li class="rounded">
+                                            <a href="add-doctor.html"><i class="fas fa-plus-square"></i>Add Doctor</a>
                                         </li>
-                                        <li class="rounded"><a href="doctors.html"><i class="far fa-eye"></i> view
-                                                Doctors
+                                        <li class="rounded">
+                                            <a href="doctors.html"><i class="far fa-eye"></i> view Doctors
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <!--  Nurses  -->
                                 <li class="rounded active">
-                                    <a><i class="fa-solid fa-user-nurse me-2"></i> Nurses <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-user-nurse me-2"></i> Nurses
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../nurses/add-nurse.html"><i
-                                                    class="fas fa-plus-square"></i> Add
-                                                view Nurse</a></li>
-                                        <li class="rounded"><a href="../nurses/nurses.html"><i class="far fa-eye"></i>
-                                                view Nurses </a></li>
+                                        <li class="rounded">
+                                            <a href="../nurses/add-nurse.html"><i class="fas fa-plus-square"></i> Add
+                                                view Nurse</a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../nurses/nurses.html"><i class="far fa-eye"></i> view Nurses
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  clinics  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-house-chimney-medical me-2"></i> Clinics <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-house-chimney-medical me-2"></i>
+                                        Clinics <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../clinics/add-clinic.html"><i
-                                                    class="fas fa-plus-square"></i>Add
-                                                clinic</a></li>
-                                        <li class="rounded"><a href="../clinics/clinics.html"><i class="far fa-eye"></i>
-                                                view clinics </a>
+                                        <li class="rounded">
+                                            <a href="../clinics/add-clinic.html"><i class="fas fa-plus-square"></i>Add
+                                                clinic</a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../clinics/clinics.html"><i class="far fa-eye"></i> view clinics
+                                            </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <!--  Pharmacists  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-user me-2"></i>Pharmacists <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-user me-2"></i>Pharmacists
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../Pharmacists/add-Pharmacist.html"><i
-                                                    class="fas fa-plus-square"></i>Add Pharmacist</a></li>
-                                        <li class="rounded"><a href="../Pharmacists/Pharmacists.html"><i
-                                                    class="far fa-eye"></i>view Pharmacists </a></li>
+                                        <li class="rounded">
+                                            <a href="../Pharmacists/add-Pharmacist.html"><i
+                                                    class="fas fa-plus-square"></i>Add Pharmacist</a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../Pharmacists/Pharmacists.html"><i class="far fa-eye"></i>view
+                                                Pharmacists
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  Laboratory  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-laptop-medical me-2"></i> Laboratory<span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-laptop-medical me-2"></i>
+                                        Laboratory<span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../Laboratory/add-Laboratory.html"><i
-                                                    class="fas fa-plus-square"></i>Add Doctor Laboratory</a></li>
-                                        <li class="rounded"><a href="../Laboratory/Laboratory.html"><i
-                                                    class="far fa-eye"></i>
-                                                view Doctor Laboratory </a></li>
+                                        <li class="rounded">
+                                            <a href="../Laboratory/add-Laboratory.html"><i
+                                                    class="fas fa-plus-square"></i>Add Doctor
+                                                Laboratory</a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../Laboratory/Laboratory.html"><i class="far fa-eye"></i> view
+                                                Doctor Laboratory
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  radiology lab  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-x-ray me-2"></i> radiology lab <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-x-ray me-2"></i> radiology lab
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../radiology-lab/add-radiology-lab.html"><i
-                                                    class="fas fa-plus-square"></i>Add Doctor radiology lab</a></li>
-                                        <li class="rounded"><a href="../radiology-lab/radiology-lab.html"><i
-                                                    class="far fa-eye"></i>
-                                                view Doctor Laboratory </a></li>
+                                        <li class="rounded">
+                                            <a href="../radiology-lab/add-radiology-lab.html"><i
+                                                    class="fas fa-plus-square"></i>Add Doctor
+                                                radiology lab</a>
+                                        </li>
+                                        <li class="rounded">
+                                            <a href="../radiology-lab/radiology-lab.html"><i class="far fa-eye"></i>
+                                                view Doctor Laboratory
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <!--  patients  -->
                                 <li class="rounded">
-                                    <a><i class="fa-solid fa-bed-pulse me-2"></i> patients <span
-                                            class="fa-solid fa-caret-down"></span></a>
+                                    <a><i class="fa-solid fa-bed-pulse me-2"></i> patients
+                                        <span class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../patients/add-patient.html"><i
-                                                    class="far fa-eye"></i>view patients</a></li>
-                                        <li class="rounded"><a href="../patients/patients.html"><i
-                                                    class="fa-solid fa-user-pen"></i>Edit patients
-                                            </a></li>
+                                        <li class="rounded">
+                                            <a href="../patients/patients.html"><i class="far fa-eye"></i>view
+                                                patients</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -295,50 +320,55 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">Home</li>
-                            <li class="breadcrumb-item active" aria-current="page">Doctors</li>
-                            <li class="breadcrumb-item" aria-current="page"> profile Doctor</li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Doctors
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                profile Doctor
+                            </li>
                         </ol>
                     </nav>
                     <!-- /breadcrumb -->
                     <div class="info-doctor row mt-4">
-                        <div class="col-3 mt-2">
-                            <img src="../../images/gettyimages-1036677548-612x612.jpg" class="w-100 rounded">
+                        <div class="col-12 col-sm-12 col-md-3 mt-2 mt-2 mt-2">
+                            <img src="../../images/admin.jpg" class="w-100 rounded" />
                             <div class="mt-3 ms-1">
                                 <div class="d-flex">
-                                    <h4>Dr/
-                                        <h4 class="ms-1"> mohamed nasfe</h4>
+                                    <h4>
+                                        Dr/
+                                        <h4 class="ms-1">mohamed nasfe</h4>
                                     </h4>
                                 </div>
                                 <p class="mt-2">dermatologist</p>
                             </div>
                         </div>
-                        <div class="col-9 mt-2">
-                            <div class="row w-75 m-auto mt-3">
-                                <div class="col-4">
+                        <div class="col-12 col-sm-12 col-md-9 mt-2">
+                            <div class="row container m-auto mt-3">
+                                <div class="col-3">
                                     <p>Full Name</p>
                                 </div>
                                 <div class="col">
-                                    <p> mohamed nasfe</p>
+                                    <p>mohamed nasfe</p>
                                 </div>
                             </div>
-                            <div class="row w-75 m-auto mt-3">
-                                <div class="col-4">
+                            <div class="row container m-auto mt-3">
+                                <div class="col-3">
                                     <p>Email</p>
                                 </div>
                                 <div class="col">
-                                    <p> mohamed nasfe10@gmail.com</p>
+                                    <p>mohamed nasfe10@gmail.com</p>
                                 </div>
                             </div>
-                            <div class="row w-75 m-auto mt-3">
-                                <div class="col-4">
+                            <div class="row container m-auto mt-3">
+                                <div class="col-3">
                                     <p>Phone</p>
                                 </div>
                                 <div class="col">
                                     <p>01065849530</p>
                                 </div>
                             </div>
-                            <div class="row w-75 m-auto mt-3">
-                                <div class="col-4">
+                            <div class="row container m-auto mt-3">
+                                <div class="col-3">
                                     <p>Address</p>
                                 </div>
                                 <div class="col">
@@ -355,10 +385,11 @@
                             </div>
                             <div class="w-75 m-auto mt-2">
                                 <a href="edite-doctor.html" class="btn"><i class="fa-solid fa-user-pen"></i>
-                                    <span class="ms-2">Edite</span> </a>
+                                    <span class="ms-2">Edite</span>
+                                </a>
                             </div>
                         </div>
-                        <hr class="w-100 bg-dark mt-3">
+                        <hr class="w-100 bg-dark mt-3" />
                         <div class="doctor-numbers row mt-3">
                             <div class="col m-2 rounded text-center info">
                                 <div class="d-flex mt-3">
@@ -371,14 +402,14 @@
                                 <div class="d-flex mt-3">
                                     <h3 class="numbers">150</h3>
                                 </div>
-                                <p class="mt-4">number of process </p>
+                                <p class="mt-4">number of process</p>
                                 <p class="mt-2">per month</p>
                             </div>
                             <div class="col m-2 rounded text-center info">
                                 <div class="d-flex mt-3">
                                     <h3 class="numbers">50</h3>
                                 </div>
-                                <p class="mt-4">number of days of attendance </p>
+                                <p class="mt-4">number of days of attendance</p>
                                 <p class="mt-2">per month</p>
                             </div>
                         </div>
@@ -398,7 +429,16 @@
             <!-- /footer content -->
         </div>
     </div>
+    <!-- move to up -->
+    <div class="up-btn shadow-lg position-fixed rounded-lg" id="moveTop">
+        <button type="button" class="btn btn-lg shadow-lg text-light m-0">
+            <i class="fa-solid fa-turn-up"></i>
+        </button>
+    </div>
 
+    <!-- js -->
+    <!-- Bootstrap -->
+    <script src="../../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- jQuery -->
     <script src="../../../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -439,9 +479,8 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../../../vendors/moment/min/moment.min.js"></script>
     <script src="../../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-
     <!-- Custom Theme Scripts -->
-    <script src="../../../build/js/custom.min.js"></script>
+    <script src="../../../build/js/custom.js"></script>
 </body>
 
 </html>

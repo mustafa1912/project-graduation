@@ -11,25 +11,24 @@
 
     <title>HCL</title>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/38c9c75214.js" crossorigin="anonymous"></script>
-    <!-- <link href="../vendors/fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet" /> -->
-    <!-- <link href="/your_path_to_version_6_files/css/all.css" rel="stylesheet"> -->
 
+    <!-- Font Awesome -->
+    <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet" />
+    <link href="../../../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
-    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
+    <link href="../../../vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
     <!-- bootstrap-progressbar -->
-    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
+    <link href="../../../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
     <!-- JQVMap -->
-    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="../../../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
-    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="../../../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.css" rel="stylesheet" />
+    <link href="../../../build/scss/main.css" rel="stylesheet" />
 </head>
 
 <body class="nav-md">
@@ -143,11 +142,8 @@
                                     <a><i class="fa-solid fa-bed-pulse me-2"></i> patients <span
                           class="fa-solid fa-caret-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li class="rounded"><a href="../patients/add-patient.html"><i
-                                  class="far fa-eye"></i>view patients</a></li>
                                         <li class="rounded"><a href="../patients/patients.html"><i
-                                  class="fa-solid fa-user-pen"></i>Edit patients
-                          </a></li>
+                                  class="far fa-eye"></i>view patients</a></li>
                                     </ul>
                                 </li>
                                 <!--  -->
@@ -692,6 +688,12 @@
             <!-- /footer content -->
         </div>
     </div>
+    <!-- move to up -->
+    <div class="up-btn shadow-lg position-fixed rounded-lg" id="up-btn">
+        <button type="button" class="btn  btn-lg  shadow-lg text-light"> 
+            <i class="fa-solid fa-turn-up"></i> 
+        </button>
+    </div>
 
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
@@ -735,7 +737,7 @@
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="../build/js/custom.js"></script>
 </body>
 
 </html>
