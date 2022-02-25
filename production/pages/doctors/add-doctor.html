@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>HCL | add doctor</title>
+    <title>HCR | add doctor</title>
 
     <!-- Font Awesome -->
     <link href="../../../vendors/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet" />
@@ -37,7 +37,7 @@
                     <div class="navbar nav_title roundeds" style="border: 0">
                         <a href="../../index.html" class="site_title">
                             <i class="fas fa-paw"></i>
-                            <span>HCL dashboard</span>
+                            <span>HCR dashboard</span>
                         </a>
                     </div>
                     <div class="clearfix"></div>
@@ -243,7 +243,7 @@
             <div class="top_nav">
                 <div class="nav_menu">
                     <div class="nav toggle">
-                        <a id="menu_toggle"><i class="fas fa-bars"></i></a>
+                        <a id="menu_toggle"><i class="menu_toggle fas fa-bars"></i></a>
                     </div>
                     <nav class="nav navbar-nav">
                         <ul class="navbar-right">
@@ -356,7 +356,156 @@
                         </ol>
                     </nav>
                     <form class="mt-2">
-                        <div class="field item form-group mt-5">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h3>Basic Information <small>Description text here...</small> </h3>
+                                    </div>
+                                    <div class="body">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row clearfix">
+                                            <form>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <input type="text" data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Date of Birth">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <select class="form-control show-tick">
+                                                        <option value="">- Gender -</option>
+                                                        <option value="10">Male</option>
+                                                        <option value="20">Female</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Speciality">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Website URL">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                                        <input type="file" id="img" name="img" id="image" accept="image/*" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="form-group mt-3">
+                                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h3>Doctor's Account Information <small>Description text here...</small> </h3>
+                                    </div>
+                                    <div class="body">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="User Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h3>Doctor Social Media Info <small>Description text here...</small> </h3>
+                                    </div>
+                                    <div class="body">
+                                        <div class="row clearfix">
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa-brands fa-facebook-f"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Facebook">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">  <i class="fa-brands fa-twitter"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Twitter">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="fa-brands fa-whatsapp"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="whatsapp">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="field item form-group mt-5">
                             <label class="col-form-label col-md-2 col-sm-2 label-align" for="Name">
                                 Name
                                 <span class="required text-danger ms-1">*</span>
@@ -524,7 +673,7 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                                 <button type="reset" class="btn btn-success">Reset</button>
                             </div>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>

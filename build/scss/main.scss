@@ -1,6 +1,7 @@
 :root {
     --primary-color: #24adf3;
     --main-color: #73879c;
+    --light: #ffffff;
 }
 
 html {
@@ -11,11 +12,16 @@ p {
     font-size: 16px;
 }
 
+@font-face {
+    font-family: 'Cairo';
+    src: url('Cairo/Cairo-VariableFont_wght.ttf');
+}
+
 .glyphicon {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: "Glyphicons Halflings";
+    font-family: "Cairo";
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -1137,8 +1143,8 @@ p {
 .nav-sm .nav.side-menu li a {
     text-align: center !important;
     font-weight: 400;
-    font-size: 10px;
-    padding: 10px 5px;
+    font-size: 12px;
+    padding: 6px 5px;
 }
 
 .nav-sm .nav.child_menu li.active,
@@ -1162,10 +1168,14 @@ p {
 }
 
 .nav-sm .nav.side-menu li a i {
-    font-size: 25px !important;
-    text-align: center;
-    width: 100% !important;
-    margin-bottom: 5px;
+    font-size: 22px;
+    color: var(--light);
+    margin {
+        top: 5px;
+        bottom: 5px;
+        right: 0px;
+        left: 0px;
+    }
 }
 
 .nav-sm ul.nav.child_menu {
@@ -1175,7 +1185,10 @@ p {
     width: 210px;
     z-index: 4000;
     background: #3e5367;
+    color: #fff;
     display: none;
+    transform: translateX(10px);
+    border-radius: 6px;
 }
 
 .nav-sm ul.nav.child_menu li {
@@ -1184,6 +1197,14 @@ p {
 
 .nav-sm ul.nav.child_menu li a {
     text-align: left !important;
+    font-size: 1;
+    color: var(--light);
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.nav-sm ul.nav.child_menu li a i {
+    font-size: 17px;
 }
 
 .nav-sm .profile {
@@ -1196,7 +1217,7 @@ p {
 
 .menu_section h3 {
     padding-left: 23px;
-    color: #fff;
+    color: var(--light);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: bold;
@@ -1234,14 +1255,14 @@ p {
 }
 
 .profile_info span {
-    font-size: 13px;
+    font-size: 20px;
     line-height: 30px;
-    color: #bab8b8;
+    color: #ffffff;
 }
 
 .profile_info h2 {
-    font-size: 14px;
-    color: #ecf0f1;
+    font-size: 20px;
+    color: #ffffff;
     margin: 0;
     font-weight: 300;
 }
@@ -1512,10 +1533,14 @@ body {
     text-transform: capitalize;
     color: var(--main-color);
     background: var(--primary-color);
-    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-family: 'Cairo';
     font-size: 13px;
     font-weight: 400;
     line-height: 1.471;
+}
+
+p {
+    font-family: "Cairo";
 }
 
 .main_container .top_nav {
@@ -1578,6 +1603,40 @@ body {
     background-color: #bdc3c7 !important;
 }
 
+.w-20 {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.width-table {
+    width: 16%;
+}
+
+.table-Visitors tr {
+    border-bottom: 1px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.table-Visitors thead th {
+    padding: 10px;
+}
+
+.table-Visitors th,
+.table-Visitors td {
+    padding: 5px;
+}
+
+.table-Visitors .numbers {
+    padding-left: 20px;
+    width: 60px;
+}
+
+.table-Visitors p {
+    transform: translateY(55%);
+    font-size: 15px;
+}
+
 table.no-margin .progress {
     margin-bottom: 0;
 }
@@ -1586,9 +1645,21 @@ table tr .fa-solid {
     float: right;
 }
 
-table .tr:hover {
-    background: var(--primary-color);
-    color: #fff;
+table tr .w-25 {
+    color: var(--primary-color);
+}
+
+table tr:hover {
+    background: #d7d7d7;
+}
+
+table tr:hover .w-20,
+tbody tr:hover th {
+    color: var(--primary-color);
+}
+
+table tr:hover .w-25 {
+    color: #3c3c3c;
 }
 
 .main_content {
@@ -2042,7 +2113,7 @@ a:focus {
 
 .nav.child_menu>li>a {
     color: #425668;
-    font-size: 14px;
+    font-size: 16px;
     padding: 9px;
 }
 
@@ -2059,7 +2130,7 @@ a:focus {
 .panel_toolbox>li>a {
     padding: 5px;
     color: #c5c7cb;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .panel_toolbox>li>a:hover {
@@ -2072,6 +2143,10 @@ a:focus {
 
 .main_menu_side {
     padding: 0;
+}
+
+.main_menu_side ul li a i {
+    font-size: 18px;
 }
 
 .bs-docs-sidebar .nav>li>a {
@@ -3271,6 +3346,73 @@ h4.graph_title {
 
 /* *********  /iconts-display  **************************** */
 
+// all doctors
+.card {
+    border-radius: .55rem;
+    background: #fff;
+    transition: .5s;
+    border: 0;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(148, 148, 148);
+}
+
+.card .body {
+    color: #444;
+    padding: 20px;
+    font-weight: 400;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.small,
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.m-t-15,
+.question li.menu-heading,
+.social-links {
+    margin-top: 15px;
+}
+
+.chart.easy-pie-chart-1>span>img {
+    left: 0;
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 60%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+h6 a {
+    font-size: 19px;
+}
+
+.body small,
+.body span {
+    font-size: 16px;
+    text-align: justify;
+}
+
+// end all doctors
 
 /** tile stats **/
 
@@ -6589,6 +6731,25 @@ ul.notifications {
 .input-group-text .fa-whatsapp {
     color: #25d366;
     font-size: 21px;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem #9a9a9a8a !important;
+}
+
+.social-links .fa-facebook-f {
+    background: #3b5998;
+    color: var(--light);
+}
+
+.social-links .fa-whatsapp {
+    background: #25d366;
+    color: var(--light);
+}
+
+.social-links li a .fa-twitter {
+    background: #1da1f2;
+    color: var(--light);
 }
 
 .input-group-text .fa-twitter {

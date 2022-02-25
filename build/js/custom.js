@@ -1,3 +1,12 @@
+const menu_toggle = document.querySelector('.menu_toggle'),
+    fa_caret_down = document.querySelectorAll('.fa-caret-down');
+
+menu_toggle.addEventListener('click', () => {
+    fa_caret_down.forEach((ele) => {
+        ele.classList.toggle('d-none')
+    })
+})
+
 // moveTop
 const moveTop = document.getElementById('moveTop');
 onscroll = () => {
