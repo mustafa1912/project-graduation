@@ -1,3 +1,20 @@
+// dark & light
+const dark = document.querySelector('.dark'),
+    Light = document.querySelector('.Light');
+
+dark.addEventListener('click', () => {
+    document.documentElement.setAttribute('data-theme', 'dark')
+})
+
+Light.addEventListener('click', () => {
+    document.documentElement.setAttribute('data-theme', 'light')
+})
+
+
+
+
+
+
 const menu_toggle = document.querySelector('.menu_toggle'),
     fa_caret_down = document.querySelectorAll('.fa-caret-down');
 

@@ -1,7 +1,19 @@
 :root {
     --primary-color: #24adf3;
+    --sec-color: #007fc0;
+    --active-color: #1abb9c;
+    --bg-gray: #ededed;
     --main-color: #73879c;
     --light: #ffffff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #1a2035;
+    --sec-color: #16181e;
+    --active-color: #202940;
+    --bg-gray: #202940;
+    --main-color: #202940;
+    --light: #202940;
 }
 
 html {
@@ -1149,7 +1161,7 @@ p {
 
 .nav-sm .nav.child_menu li.active,
 .nav-sm .nav.side-menu li.active-sm {
-    border-right: 5px solid #1abb9c;
+    border-right: 5px solid var(--active-color);
 }
 
 .nav-sm ul.nav.child_menu ul,
@@ -1160,7 +1172,7 @@ p {
 }
 
 .nav-sm>.nav.side-menu>li.active-sm>a {
-    color: #1abb9c !important;
+    color: var(--active-color) !important;
 }
 
 .nav-sm .nav.side-menu li a i.toggle-up {
@@ -1239,7 +1251,7 @@ p {
 
 .img-circle.profile_img {
     width: 70%;
-    background: #fff;
+    background: var(--light);
     margin-left: 15%;
     z-index: 1000;
     position: inherit;
@@ -1316,7 +1328,7 @@ p {
 
 .nav_menu {
     float: left;
-    background: #ededed;
+    background: var(--bg-gray);
     border-bottom: 1px solid #d9dee4;
     margin-bottom: 10px;
     width: 100%;
@@ -1370,7 +1382,7 @@ body .container.body .right_col {
 .nav_title {
     width: 230px;
     float: left;
-    background: #007fc0;
+    background: var(--sec-color);
     border-radius: 0;
     height: 57px;
     padding: 0px;
@@ -1462,7 +1474,7 @@ body .container.body .right_col {
 }
 
 .border-green {
-    border-color: #1abb9c !important;
+    border-color: var(--active-color) !important;
 }
 
 .border-aero {
@@ -1952,7 +1964,7 @@ a:focus {
 
 .nav.side-menu>li.current-page,
 .nav.side-menu>li.active {
-    border-right: 5px solid #007fc0;
+    border-right: 5px solid var(--sec-color);
 }
 
 .nav li.current-page {
@@ -2155,7 +2167,7 @@ a:focus {
 }
 
 footer {
-    background: #fff;
+    background: var(--light);
     padding: 10px 20px;
     display: block;
 }
@@ -2341,7 +2353,7 @@ h2 {
     margin-bottom: 10px;
     padding: 10px 10px;
     display: inline-block;
-    background: #fff;
+    background: var(--light);
     border: 1px solid #e6e9ed;
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
@@ -2417,7 +2429,7 @@ legend {
 .profile_details .profile_view {
     display: inline-block;
     padding: 10px 0 0;
-    background: #fff;
+    background: var(--light);
 }
 
 .profile_details .profile_view .divider {
@@ -2740,7 +2752,7 @@ table.jambo_table tbody tr.selected td {
 
 table.dataTable th.focus,
 table.dataTable td.focus {
-    outline: 2px solid #1abb9c !important;
+    outline: 2px solid var(--active-color) !important;
     outline-offset: -1px;
 }
 
@@ -2957,7 +2969,7 @@ ul.msg_list li a .message {
 
 .navbar-nav .open .dropdown-menu {
     position: absolute;
-    background: #fff;
+    background: var(--light);
     margin-top: 0;
     border: 1px solid #d9dee4;
     -webkit-box-shadow: none;
@@ -3011,7 +3023,7 @@ ul.to_do p {
     padding: 3px 6px;
     border: 1px solid #abd9ea;
     border-radius: 5px;
-    background: #fff;
+    background: var(--light);
 }
 
 ul.quick-list {
@@ -3044,7 +3056,7 @@ ul.quick-list li i {
     width: 50%;
     display: inline-block;
     vertical-align: top;
-    background: #fff;
+    background: var(--light);
     border: 1px solid #abd9ea;
     border-radius: 5px;
     text-align: center;
@@ -3116,7 +3128,7 @@ span.right {
     padding: 5px 0 0 0;
     position: fixed;
     width: 230px;
-    background: #007fc0;
+    background: var(--sec-color);
 }
 
 .sidebar-footer a {
@@ -3127,7 +3139,7 @@ span.right {
     display: block;
     float: left;
     color: #fff;
-    background: #007fc0;
+    background: var(--sec-color);
 }
 
 .sidebar-footer a:hover {
@@ -3216,7 +3228,7 @@ span.right {
 /** /top tiles **/
 
 .dashboard_graph {
-    background: #fff;
+    background: var(--light);
     padding: 7px 10px;
 }
 
@@ -3349,7 +3361,7 @@ h4.graph_title {
 // all doctors
 .card {
     border-radius: .55rem;
-    background: #fff;
+    background: var(--light);
     transition: .5s;
     border: 0;
     margin-bottom: 30px;
@@ -3429,7 +3441,7 @@ h6 a {
     -moz-background-clip: padding;
     border-radius: 5px;
     background-clip: padding-box;
-    background: #fff;
+    background: var(--light);
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -3501,7 +3513,7 @@ h6 a {
     text-align: center;
     margin-top: 5px;
     padding: 3px 0;
-    color: #fff;
+    color: var(--light);
     color: rgba(255, 255, 255, 0.8);
     display: block;
     z-index: 10;
@@ -3564,7 +3576,7 @@ a.star {
 }
 
 .mail_content {
-    background: none repeat scroll 0 0 #ffffff;
+    background: none repeat scroll 0 0 var(--light);
     border-radius: 4px;
     margin-top: 20px;
     min-height: 500px;
@@ -3720,7 +3732,7 @@ button,
     position: fixed;
     bottom: 0;
     right: 0;
-    background: #fff;
+    background: var(--light);
     border: 1px solid #d9dee4;
     border-right: 0;
     border-bottom: 0;
@@ -3732,7 +3744,7 @@ button,
 .compose .compose-header {
     padding: 5px;
     background: #169f85;
-    color: #fff;
+    color: var(--light);
     border-top-left-radius: 5px;
 }
 
@@ -3784,7 +3796,7 @@ label {
 .ln_solid {
     border-top: 1px solid #e5e5e5;
     color: #ffffff;
-    background-color: #ffffff;
+    background-color: var(--light);
     height: 1px;
     margin: 20px 0;
 }
@@ -3980,12 +3992,12 @@ select.parsley-error {
 }
 
 .well .markup {
-    background: #fff;
+    background: var(--light);
     color: #777;
     position: relative;
     padding: 45px 15px 15px;
     margin: 15px 0 0 0;
-    background-color: #fff;
+    background-color: var(--light);
     border-radius: 0 0 4px 4px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -4210,7 +4222,7 @@ textarea:focus {
 
 .bs-glyphicons li:hover {
     color: #fff;
-    background-color: #1abb9c;
+    background-color: var(--active-color);
 }
 
 @media (min-width: 768px) {
@@ -4232,7 +4244,7 @@ textarea:focus {
 
 .tagsinput {
     border: 1px solid #ccc;
-    background: #fff;
+    background: var(--light);
     padding: 6px 6px 0;
     width: 300px;
     overflow-y: auto;
@@ -4245,7 +4257,7 @@ span.tag {
     float: left;
     padding: 5px 9px;
     text-decoration: none;
-    background: #1abb9c;
+    background: var(--active-color);
     color: #f1f6f7;
     margin-right: 5px;
     font-weight: 500;
@@ -4315,7 +4327,7 @@ ul.bar_tabs>li {
     color: #333 !important;
     margin-top: -17px;
     margin-left: 8px;
-    background: #fff;
+    background: var(--light);
     border-bottom: none;
     border-radius: 4px 4px 0 0;
 }
@@ -4406,7 +4418,7 @@ ul.timeline li {
 
 .tag {
     line-height: 1;
-    background: #1abb9c;
+    background: var(--active-color);
     color: #fff !important;
 }
 
@@ -4421,7 +4433,7 @@ ul.timeline li {
     pointer-events: none;
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
-    border-left: 11px solid #1abb9c;
+    border-left: 11px solid var(--active-color);
 }
 
 .timeline h2.title {
@@ -4471,7 +4483,7 @@ ul.social li {
 }
 
 .social-sidebar {
-    background: #ededed;
+    background: var(--bg-gray);
     width: 22%;
 }
 
@@ -4506,7 +4518,7 @@ ul.social li {
 }
 
 .chat .status.online {
-    background: #1abb9c;
+    background: var(--active-color);
 }
 
 .chat .status.away {
@@ -4667,7 +4679,7 @@ ul.widget_profile_box li a {
 }
 
 ul.widget_profile_box li a:hover {
-    color: #1abb9c !important;
+    color: var(--active-color) !important;
     border: 1px solid #26b99a;
 }
 
@@ -4763,7 +4775,7 @@ ul.count2 li span {
 
 .divider-dashed {
     border-top: 1px dashed #e7eaec;
-    background-color: #ffffff;
+    background-color: var(--light);
     height: 1px;
     margin: 10px 0;
 }
@@ -4904,13 +4916,13 @@ ul.project_files li a i {
 /* *********  pricing  **************************** */
 
 .pricing {
-    background: #fff;
+    background: var(--light);
 }
 
 .pricing .title {
-    background: #1abb9c;
+    background: var(--active-color);
     height: 110px;
-    color: #fff;
+    color: var(--light);
     padding: 15px 0 0;
     text-align: center;
 }
@@ -5371,7 +5383,7 @@ ul.project_files li a i {
 .product_price {
     margin: 20px 0;
     padding: 5px 10px;
-    background-color: #ffffff;
+    background-color: var(--light);
     text-align: left;
     border: 2px dashed #e0e0e0;
 }
@@ -5679,17 +5691,17 @@ header {
 /** NProgress **/
 
 #nprogress .bar {
-    background: #1abb9c;
+    background: var(--active-color);
 }
 
 #nprogress .peg {
-    -webkit-box-shadow: 0 0 10px #1abb9c, 0 0 5px #1abb9c;
-    box-shadow: 0 0 10px #1abb9c, 0 0 5px #1abb9c;
+    -webkit-box-shadow: 0 0 10px var(--active-color), 0 0 5px var(--active-color);
+    box-shadow: 0 0 10px var(--active-color), 0 0 5px var(--active-color);
 }
 
 #nprogress .spinner-icon {
-    border-top-color: #1abb9c;
-    border-left-color: #1abb9c;
+    border-top-color: var(--active-color);
+    border-left-color: var(--active-color);
 }
 
 
@@ -5748,7 +5760,7 @@ div[data-role="editor-toolbar"] {
 
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--multiple {
-    background-color: #fff;
+    background-color: var(--light);
     border: 1px solid #ccc;
     border-radius: 0;
     min-height: 38px;
@@ -6063,12 +6075,12 @@ fieldset {
 .wizard_horizontal ul.wizard_steps li a.selected:before,
 .step_no {
     background: #34495e;
-    color: #fff;
+    color: var(--light);
 }
 
 .wizard_horizontal ul.wizard_steps li a.done:before,
 .wizard_horizontal ul.wizard_steps li a.done .step_no {
-    background: #1abb9c;
+    background: var(--active-color);
     color: #fff;
 }
 
@@ -6183,7 +6195,7 @@ fieldset {
 
 .wizard_verticle ul.wizard_steps li a.done:before,
 .wizard_verticle ul.wizard_steps li a.done .step_no {
-    background: #1abb9c;
+    background: var(--active-color);
     color: #fff;
 }
 
@@ -6495,6 +6507,11 @@ ul.notifications {
     border: 1px solid #e5e5e5;
 }
 
+.form-control {
+    background: var(--bg-gray);
+    border: var(--bg-gray);
+}
+
 
 /** /Dropzone.js **/
 
@@ -6593,7 +6610,7 @@ ul.notifications {
 }
 
 .daterangepicker.picker_1 .calendar-table thead tr:first-child {
-    background: #1abb9c;
+    background: var(--active-color);
 }
 
 .daterangepicker.picker_1 .calendar-table td.off {
@@ -6606,7 +6623,7 @@ ul.notifications {
 }
 
 .daterangepicker.picker_2 .calendar-table thead tr {
-    color: #1abb9c;
+    color: var(--active-color);
 }
 
 .daterangepicker.picker_2 .calendar-table thead tr:first-child {
@@ -6615,7 +6632,7 @@ ul.notifications {
 
 .daterangepicker.picker_3 .calendar-table thead tr:first-child {
     color: #fff;
-    background: #1abb9c;
+    background: var(--active-color);
 }
 
 .daterangepicker.picker_4 .calendar-table thead tr:first-child {
