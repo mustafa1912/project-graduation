@@ -223,16 +223,16 @@
                     <!-- /menu footer buttons -->
                     <div class="sidebar-footer hidden-small rounded">
                         <a data-toggle="tooltip" data-placement="top" title="Settings" class="rounded">
-                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                            <span class="fa-solid fa-gear" aria-hidden="true"></span>
                         </a>
-                        <a data-toggle="tooltip" data-placement="top" title="FullScreen" class="rounded">
-                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        <a data-toggle="tooltip" data-placement="top" title="Dark mode" class="rounded">
+                            <span class="fa-solid fa-circle-half-stroke" aria-hidden="true"></span>
                         </a>
-                        <a data-toggle="tooltip" data-placement="top" title="Lock" class="rounded">
-                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        <a data-toggle="tooltip" data-placement="top" title="Loght mode" class="rounded">
+                            <span class="fa-solid fa-lightbulb" aria-hidden="true"></span>
                         </a>
                         <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html" class="rounded">
-                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                            <span class="fa-solid fa-right-from-bracket" aria-hidden="true"></span>
                         </a>
                     </div>
                     <!-- /menu footer buttons -->
@@ -355,325 +355,150 @@
                             <li class="breadcrumb-item" aria-current="page">Add Doctor</li>
                         </ol>
                     </nav>
-                    <form class="mt-2">
+                    <form class="mt-2 g-3 needs-validation" novalidate>
+                        <!-- Basic Information  -->
                         <div class="row clearfix">
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h3>Basic Information <small>Description text here...</small> </h3>
+                                        <h3>Basic Information </h3><small>Description text here...</small>
                                     </div>
                                     <div class="body">
                                         <div class="row clearfix">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="First Name">
+                                            <div class="col-sm-6  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                                    <label for="floatingInput">First Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                            <div class="col-sm-6 mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                                    <label for="floatingInput">Last Name</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row clearfix">
-                                            <form>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <input type="text" data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Date of Birth">
-                                                    </div>
+                                            <div class="col-sm-3  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Date of Birth" required>
+                                                    <label for="floatingInput">Date of Birth</label>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <select class="form-control show-tick">
+                                            </div>
+                                            <div class="col-sm-3  mb-3">
+                                                <div class="form-floating">
+                                                    <select class="form-control show-tick" required>
                                                         <option value="">- Gender -</option>
                                                         <option value="10">Male</option>
                                                         <option value="20">Female</option>
                                                     </select>
-                                                    </div>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Speciality">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-3  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Speciality" required>
+                                                    <label for="floatingInput">Speciality</label>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Phone">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-3  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Phone" required>
+                                                    <label for="floatingInput">Phone</label>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Enter Your Email">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-6  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Enter Your Emai" required>
+                                                    <label for="floatingInput">Enter Your Email</label>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Website URL">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-12  mb-3">
+                                                <div class="col-12 col-sm-12 col-md-8 floatingInput">
+                                                    <input type="file" id="img" name="img" id="image" accept="image/*" class="form-control" />
                                                 </div>
-                                                <div class="col-sm-12">
-                                                    <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                                        <input type="file" id="img" name="img" id="image" accept="image/*" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group mt-3">
-                                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                                    <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                                </div>
-
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Doctor's Account Information  -->
                         <div class="row clearfix">
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h3>Doctor's Account Information <small>Description text here...</small> </h3>
+                                        <h3>Doctor's Account Information </h3><small>Description text here...</small>
                                     </div>
                                     <div class="body">
                                         <div class="row clearfix">
                                             <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="User Name">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" placeholder="User Name" required>
+                                                    <label for="floatingInput">User Name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Password">
+                                            <div class="col-sm-6  mb-3">
+                                                <div class="form-floating">
+                                                    <input type="password" class="form-control password" placeholder="Password" required name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character">
+                                                    <label for="floatingInput">Password</label>
+                                                    <span style="position: absolute; right: 15px; top: 31%;" class="hideshow">
+                                                        <i class="fa fa-eye-slash me-2 d-none"></i>
+                                                        <i class="fa fa-eye me-2"></i>
+                                                    </span>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Confirm Password">
+                                            <div class="col-sm-6 mb-3">
+                                                <div class="form-floating">
+                                                    <input type="password" class="form-control password" placeholder="Confirm Password" required name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character">
+                                                    <label for="floatingInput">Confirm Password</label>
+                                                    <span style="position: absolute; right: 15px; top: 31%;" class="hideshow">
+                                                        <i  class="fa fa-eye-slash me-2 d-none"></i>
+                                                        <i  class="fa fa-eye me-2"></i>
+                                                    </span>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Doctor Social Media Info -->
                         <div class="row clearfix">
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h3>Doctor Social Media Info <small>Description text here...</small> </h3>
+                                        <h3>Doctor Social Media Info </h3><small>Description text here...</small>
                                     </div>
                                     <div class="body">
                                         <div class="row clearfix">
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"> <i class="fa-brands fa-facebook-f"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="Facebook">
+                                                    <span class="input-group-text" id="whatsapp"> <i class="fa-brands fa-facebook-f"></i> </span>
+                                                    <input type="text" for="whatsapp" class="form-control" placeholder="whatsapp" aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">  <i class="fa-brands fa-twitter"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="Twitter">
+                                                    <span class="input-group-text" id="twitter"><i class="fa-brands fa-twitter"></i></span>
+                                                    <input type="text" for="twitter" class="form-control" placeholder="twitter" aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa-brands fa-whatsapp"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="whatsapp">
+                                                    <span class="input-group-text" id="Facebook"><i class="fa-brands fa-whatsapp"></i></span>
+                                                    <input type="text" for="Facebook" class="form-control" placeholder="Facebook" aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="field item form-group mt-5">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Name">
-                                Name
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" id="Name" placeholder="Mohamed sharaf" required />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Doctor ID">
-                                Doctor ID
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="number" placeholder="Doctor ID" id="Doctor ID" class="number" name="number" required />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="National-Number">
-                                National Number
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="number" placeholder="National Number" id="National-Number" class="number" name="number" maxlength="14" required />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="phone">
-                                phone
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="tel" type="number" id="phone" placeholder="+20 1..." class="tel" name="phone" required maxlength="11" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Address">
-                                Address
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="text" type="number" id="Address" placeholder="Quesna - Menoufia" name="phone" required maxlength="11" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Birthday">
-                                Birthday Date
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" class="date" type="date" id="Birthday" name="date" required />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="control-label col-md-2 col-sm-2" for="Speciality">
-                                Speciality
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-md-v col-12 col-sm-12 col-md-8">
-                                <select class="form-control" placeholder="Choise Speciality" id="Speciality">
-                                    <option>Pediatrician</option>
-                                    <option>dentist</option>
-                                    <option>Heart Surgery</option>
-                                    <option>Psychiatry</option>
-                                    <option>Kidney disease</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="control-label col-md-2 col-sm-2">
-                                Work shift
-                            </label>
-                            <div class="col-md-v col-12 col-sm-12 col-md-8">
-                                <select class="form-control">
-                                    <option>8 : 4</option>
-                                    <option>4 : 12</option>
-                                    <option>12 : 8</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="image">
-                                Uploud image
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input type="file" id="img" name="img" id="image" accept="image/*" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="whatsapp">
-                                whatsapp
-                            </label>
-                            <div class="col-md-8 col-sm-8 row">
-                                <span class="input-group-text col-1"><i class="fa-brands fa-whatsapp"></i></span>
-                                <input type="text" class="form-control col" placeholder="whatsapp" id="whatsapp" name="whatsapp" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Facebook">
-                                Facebook
-                            </label>
-                            <div class="col-md-8 col-sm-8 row">
-                                <span class="input-group-text col-1">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </span>
-                                <input type="text" class="form-control col" placeholder="Facebook" id="Facebook" name="Facebook" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="twitter">
-                                twitter
-                            </label>
-                            <div class="col-md-8 col-sm-8 row">
-                                <span class="input-group-text col-1">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </span>
-                                <input type="text" class="form-control col" placeholder="twitter" id="twitter" name="twitter" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="email">
-                                email
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" name="email" placeholder="mohamed@gmail.com" id="email" class="email" required type="email" />
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align" for="Password">
-                                Password
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-12 col-sm-12 col-md-8 floatingInput">
-                                <input class="form-control" type="password" id="Password" placeholder="*******" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Minimum 8 Characters Including An Upper And Lower Case Letter, A Number And A Unique Character"
-                                    required />
-                                <span style="position: absolute; right: 15px; top: 7px" id="hideshow">
-                                    <i id="slash" class="fa fa-eye-slash me-2 d-none"></i>
-                                    <i id="eye" class="fa fa-eye me-2"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="field item form-group mt-4">
-                            <label class="col-form-label col-md-2 col-sm-2 label-align d-inline">
-                                Gender
-                                <span class="required text-danger ms-1">*</span>
-                            </label>
-                            <div class="col-8 col-sm-8 col-md-8 floatingInput">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" class="flat mt-2" checked name="iCheck" />
-                                        male
-                                    </label>
-                                </div>
-                                <div class="radio mt-3">
-                                    <label>
-                                        <input type="radio" class="flat mt-3" name="iCheck" />
-                                        fmale
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- buttons -->
                         <div class="form-group mb-4 pt-2">
-                            <div class="w-75 offset-md-1 mt-5 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                <button type="reset" class="btn btn-success">Reset</button>
-                            </div>
-                        </div> -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -740,7 +565,7 @@
     <script src="../../../vendors/moment/min/moment.min.js"></script>
     <script src="../../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../../../build/js/showpass.js"></script>
+    <!-- <script src="../../../build/js/showpass.js"></script> -->
     <script src="../../../build/js/custom.js"></script>
 </body>
 
