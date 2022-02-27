@@ -12,6 +12,7 @@
   --form-color: #f9f9f9;
   --form-border: #24adf3;
   --social-color: #e9ecef;
+  --light: #fff;
 }
 
 [data-theme="dark"] {
@@ -27,6 +28,7 @@
   --bg-sectoin: #1F283E;
   --form-color: #1A2035;
   --social-color: #0f131e;
+  --light: #fff;
 }
 
 html {
@@ -40,6 +42,7 @@ label,
   color: var(--text-color);
 }
 
+h6,
 small {
   color: var(--text-color);
 }
@@ -1393,7 +1396,7 @@ small {
 }
 
 body .container.body .right_col {
-  background: #f7f7f7;
+  background: var(--bg);
 }
 
 .nav-md .container.body .right_col {
@@ -1876,6 +1879,7 @@ a:focus {
 .dropdown-item {
   width: 100%;
   padding: 12px 20px;
+  color: var(--text-color);
 }
 
 .top_nav li a i {
@@ -2150,7 +2154,7 @@ a:focus {
 
 .toggle a i {
   font-size: 26px;
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 .nav.child_menu > li > a {
@@ -2987,11 +2991,15 @@ ul.msg_list li a .message {
   color: #5a738e;
 }
 
+.breadcrumb {
+  font-size: 15px;
+}
+
 .navbar-nav .open .dropdown-menu {
   position: absolute;
   background: var(--bg-sectoin);
   margin-top: 0;
-  border: 1px solid #d9dee4;
+  border: 1px solid var(--bg-sectoin);
   -webkit-box-shadow: none;
   right: 0;
   left: auto;
@@ -3368,6 +3376,10 @@ h4.graph_title {
 }
 
 /* *********  /iconts-display  **************************** */
+h4 {
+  font-size: 1.5rem;
+}
+
 .card {
   border-radius: .55rem;
   background: var(--bg-sectoin);
@@ -3385,14 +3397,77 @@ h4.graph_title {
   color: #444;
   padding: 20px;
   font-weight: 400;
+}
+
+.card .body.doctor-info {
   max-height: 325px;
   overflow: hidden;
 }
 
+.card .body.doctor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.secion-count i {
+  font-size: 22px;
+}
+
+.secion-count .count-to {
+  font-size: 25px;
+}
+
+.Experience i,
+.Experience h5 {
+  color: #01b2c6;
+}
+
+.Awards i,
+.Awards h5 {
+  color: #2196f3;
+}
+
+.Clients i,
+.Clients h5 {
+  color: #f44336;
+}
+
+.Surgery i,
+.Surgery h5 {
+  color: #4caf50;
+}
+
+.nav-tabs-new li a {
+  padding: 10px;
+  font-size: 16px;
+  color: var(--bs-gray);
+}
+
+.nav-tabs-new > li > a.active {
+  border: 1px solid #01b2c6 !important;
+  background: #01b2c6;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
 .card-form {
   background: var(--bg);
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -3449,9 +3524,23 @@ h6 a {
 }
 
 .body small,
-.body span {
+.card span {
   font-size: 16px;
   text-align: justify;
+  color: var(--text-color);
+}
+
+strong {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card .header {
+  padding: 5px;
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /** tile stats **/
@@ -6678,17 +6767,17 @@ ul.notifications {
 
 .social-links .fa-facebook-f {
   background: #3b5998;
-  color: var(--bg-sectoin);
+  color: var(--light);
 }
 
 .social-links .fa-whatsapp {
   background: #25d366;
-  color: var(--bg-sectoin);
+  color: var(--light);
 }
 
 .social-links li a .fa-twitter {
   background: #1da1f2;
-  color: var(--bg-sectoin);
+  color: var(--light);
 }
 
 .input-group-text .fa-twitter {
@@ -6713,6 +6802,14 @@ ul.notifications {
 
 .fa-facebook-f {
   color: #0d6efd;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-whatsapp {
+  color: #25d366;
 }
 
 .doctor-numbers .numbers {

@@ -4914,6 +4914,7 @@ fieldset:disabled .btn {
     padding: 0 0;
     margin-bottom: 1rem;
     list-style: none;
+    font-size: 15px;
 }
 
 .breadcrumb-item+.breadcrumb-item {

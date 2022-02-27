@@ -45,7 +45,7 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="../../images/admin.jpg" alt="..." class="img-circle profile_img" />
+                            <img src="../../images/doctors/John Smith.jpg" alt="..." class="img-circle profile_img" />
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
@@ -250,17 +250,15 @@
                         </div>
                         <nav class="nav navbar-nav">
                             <ul class="navbar-right">
-                                <li class="nav-item dropdown open" style="padding-left: 15px">
+                                <li class="nav-item dropdown open ms-3" style="padding-left: 15px">
                                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                        <img src="../../images/admin.jpg" alt="" /> John Doe
+                                        <img src="../../images/doctors/John Smith.jpg" alt="" /> John Doe
                                     </a>
-                                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="javascript:;">Profile</a>
+                                    <div class="dropdown-menu dropdown-usermenu pull-right rounded" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="javascript:;">
-                                            <span class="badge bg-red pull-right">50%</span>
-                                            <span>Settings</span>
+                                            <span>Profile</span>
                                         </a>
-                                        <a class="dropdown-item" href="javascript:;">Help</a>
+
                                         <a class="dropdown-item" href="login.html">
                                             <i class="fas fa-sign-out pull-right"></i> Log Out
                                         </a>
@@ -275,7 +273,8 @@
                                         <li class="nav-item">
                                             <a class="dropdown-item">
                                                 <span class="image">
-                                                    <img src="../../images/admin.jpg" alt="Profile Image" />
+                                                    <img src="../../images/doctors/John Smith.jpg"
+                                                        alt="Profile Image" />
                                                 </span>
                                                 <span>
                                                     <span>John Smith</span>
@@ -290,7 +289,8 @@
                                         <li class="nav-item">
                                             <a class="dropdown-item">
                                                 <span class="image">
-                                                    <img src="../../images/admin.jpg" alt="Profile Image" />
+                                                    <img src="../../images/doctors/John Smith.jpg"
+                                                        alt="Profile Image" />
                                                 </span>
                                                 <span>
                                                     <span>John Smith</span>
@@ -305,7 +305,8 @@
                                         <li class="nav-item">
                                             <a class="dropdown-item">
                                                 <span class="image">
-                                                    <img src="../../images/admin.jpg" alt="Profile Image" />
+                                                    <img src="../../images/doctors/John Smith.jpg"
+                                                        alt="Profile Image" />
                                                 </span>
                                                 <span>
                                                     <span>John Smith</span>
@@ -320,7 +321,8 @@
                                         <li class="nav-item">
                                             <a class="dropdown-item">
                                                 <span class="image">
-                                                    <img src="../../images/admin.jpg" alt="Profile Image" />
+                                                    <img src="../../images/doctors/John Smith.jpg"
+                                                        alt="Profile Image" />
                                                 </span>
                                                 <span>
                                                     <span>John Smith</span>
@@ -361,7 +363,7 @@
                                 </li>
                             </ol>
                         </nav>
-                        <form class="mt-2 g-3 needs-validation" novalidate>
+                        <form>
                             <!-- Basic Information  -->
                             <div class="row clearfix">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -388,7 +390,7 @@
                                             <div class="row clearfix">
                                                 <div class="col-sm-6 mb-3">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Enter Your Emai" required />
+                                                        <input type="email" class="form-control" placeholder="Enter Your Emai" required />
                                                         <label for="floatingInput">Enter Your Email</label>
                                                     </div>
                                                 </div>
@@ -403,31 +405,42 @@
                                                         <input class="form-control form-control show-tick" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
                                                         <datalist id="datalistOptions">
                                                             <option value="">- Departments -</option>
-                                                            <option value="Allergists/Immunologists">Allergists/Immunologists</option>
+                                                            <option value="Allergists/Immunologists">
+                                                                Allergists/Immunologists</option>
                                                             <option value="Anesthesiologists">Anesthesiologists</option>
                                                             <option value="Cardiologists">Cardiologists</option>
-                                                            <option value="Colon and Rectal Surgeons">Colon and Rectal Surgeons</option>
-                                                            <option value="Critical Care Medicine Specialists">Critical Care Medicine Specialists
+                                                            <option value="Colon and Rectal Surgeons">Colon and Rectal
+                                                                Surgeons</option>
+                                                            <option value="Critical Care Medicine Specialists">Critical
+                                                                Care Medicine Specialists
                                                             </option>
                                                             <option value="Dermatologists">Dermatologists</option>
                                                             <option value="Endocrinologists">Endocrinologists</option>
-                                                            <option value="Emergency Medicine Specialists">Emergency Medicine Specialists</option>
+                                                            <option value="Emergency Medicine Specialists">Emergency
+                                                                Medicine Specialists</option>
                                                             <option value="Family Physicians">Family Physicians</option>
-                                                            <option value="Gastroenterologists">Gastroenterologists</option>
-                                                            <option value="Geriatric Medicine Specialists">Geriatric Medicine Specialists</option>
+                                                            <option value="Gastroenterologists">Gastroenterologists
+                                                            </option>
+                                                            <option value="Geriatric Medicine Specialists">Geriatric
+                                                                Medicine Specialists</option>
                                                             <option value="Hematologists">Hematologists</option>
-                                                            <option value="Hospice and Palliative Medicine Specialists">Hospice and Palliative Medicine
+                                                            <option value="Hospice and Palliative Medicine Specialists">
+                                                                Hospice and Palliative Medicine
                                                                 Specialists</option>
-                                                            <option value="Infectious Disease Specialists">Infectious Disease Specialists</option>
+                                                            <option value="Infectious Disease Specialists">Infectious
+                                                                Disease Specialists</option>
                                                             <option value="Internists">Internists</option>
-                                                            <option value="Medical Geneticists">Medical Geneticists</option>
+                                                            <option value="Medical Geneticists">Medical Geneticists
+                                                            </option>
                                                             <option value="Nephrologists">Nephrologists</option>
                                                             <option value="Neurologists">Neurologists</option>
-                                                            <option value="Obstetricians and Gynecologists">Obstetricians and Gynecologists</option>
+                                                            <option value="Obstetricians and Gynecologists">
+                                                                Obstetricians and Gynecologists</option>
                                                             <option value="Surgeons">Surgeons</option>
                                                             <option value="Physiatrists">Physiatrists</option>
                                                             <option value="2Podiatrists0">Podiatrists</option>
-                                                            <option value="Preventive Medicine Specialists">Preventive Medicine Specialists</option>
+                                                            <option value="Preventive Medicine Specialists">Preventive
+                                                                Medicine Specialists</option>
                                                             <option value="Psychiatrists">Psychiatrists</option>
                                                             <option value="2Radiologists0">Radiologists</option>
                                                             <option value="Pulmonologists">Pulmonologists</option>
@@ -437,20 +450,26 @@
                                                         <label for="floatingInput">- Departments -</label>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="col-sm-3 mb-3">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Speciality" required />
-                                                        <label for="floatingInput">Speciality</label>
-                                                    </div>
-                                                </div> -->
                                                 <div class="col-sm-6 mb-3">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Phone" required />
+                                                        <input type="number" class="form-control" placeholder="Phone" required />
                                                         <label for="floatingInput">Phone</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6 p-0 mb-3">
+                                                <div class="col-sm-3 p-0 mb-3">
                                                     <input class="form-control form-control-lg" id="formFileLg" type="file">
+                                                </div>
+                                                <div class="col-sm-3 mb-3">
+                                                    <div class="form-floating">
+                                                        <input class="form-control form-control show-tick" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                        <datalist id="datalistOptions">
+                                                            <option value="">- Time shift -</option>
+                                                            <option value=" 8 : 4 "> 8 : 4 </option>
+                                                            <option value=" 4 : 12 "> 4 : 12 </option>
+                                                            <option value=" 12 : 8 "> 12 : 8 </option>
+                                                        </datalist>
+                                                        <label for="floatingInput">- Time shift -</label>
+                                                    </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-3">
                                                     <label class="col-form-label col-sm-3 col-md-2 label-align d-inline">
@@ -524,10 +543,10 @@
                                             <div class="row clearfix">
                                                 <div class="col-md-6">
                                                     <div class="input-group mb-3">
-                                                        <span class="input-group-text" id="whatsapp">
+                                                        <span class="input-group-text" id="facebook">
                                                             <i class="fa-brands fa-facebook-f"></i>
                                                         </span>
-                                                        <input type="text" for="whatsapp" class="form-control" placeholder="whatsapp" aria-label="Username" aria-describedby="basic-addon1" />
+                                                        <input type="text" for="facebook" class="form-control" placeholder="whatsapp" aria-label="Username" aria-describedby="basic-addon1" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -539,9 +558,9 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="input-group mb-3">
-                                                        <span class="input-group-text" id="Facebook"><i
+                                                        <span class="input-group-text" id="whatsapp"><i
                                                                 class="fa-brands fa-whatsapp"></i></span>
-                                                        <input type="text" for="Facebook" class="form-control" placeholder="Facebook" aria-label="Username" aria-describedby="basic-addon1" />
+                                                        <input type="text" for="whatsapp" class="form-control" placeholder="Facebook" aria-label="Username" aria-describedby="basic-addon1" />
                                                     </div>
                                                 </div>
                                             </div>
