@@ -1204,7 +1204,7 @@ small {
 
 .nav-sm .nav.side-menu li a i {
   font-size: 22px;
-  color: var(--bg-sectoin);
+  color: #fff;
 }
 
 .nav-sm .nav.side-menu li a i margin {
@@ -1402,7 +1402,7 @@ body .container.body .right_col {
 .nav-md .container.body .right_col {
   padding: 10px 20px 0;
   margin-left: 230px;
-  background: var(--bg-sectoin);
+  background: var(--bg);
 }
 
 .nav_title {
@@ -2149,7 +2149,7 @@ a:focus {
   margin: auto;
   margin-top: 5px;
   cursor: pointer;
-  background-color: var(--bg-sectoin);
+  background-color: var(--bg);
 }
 
 .toggle a i {
@@ -3237,12 +3237,12 @@ span.right {
 }
 
 .tile_count .tile_stats_count span {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
   .tile_count .tile_stats_count span {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
